@@ -9,12 +9,38 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-    @IBOutlet weak var dataTextField: UITextField!  // 전달할 이름을 넣음
+    // MARK: TextFields
+    @IBOutlet weak var dataTextField: UITextField!
+    @IBOutlet weak var contactTextField: UITextField!
+    @IBOutlet weak var pwTextField: UITextField!
     
+    
+    // MARK: Buttons
+    @IBOutlet weak var nextButton: UIButton!
+    
+    
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nextButton.isEnabled = false    // 처음에는 비활성화
+        self.dataTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
+        self.contactTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
+        self.pwTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
     }
         
+    
+    // MARK: Methods
+    @objc func textFieldCompleted(_ textField: UITextField) {
+        if dataTextField.hasText && contactTextField.hasText && pwTextField.hasText {   // Text가 모두 채워지면
+            nextButton.isEnabled = true // 버튼 활성화
+        } else {
+            nextButton.isEnabled = false
+        }
+    }
+    
+    
+    // MARK: IBActions
     @IBAction func touchUpToGoSecondView(_ sender: Any) {
         guard let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") else {return}
         
@@ -32,5 +58,9 @@ class FirstViewController: UIViewController {
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated: true, completion: nil)
     }
+    
+    @IBAction func touchUpToShowPW(_ sender: UIButton) {
+    }
+    
     
 }
