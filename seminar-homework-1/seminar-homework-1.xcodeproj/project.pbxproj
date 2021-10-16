@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F6FD7FB2270DC76300B4A2D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD7FB1270DC76300B4A2D3 /* AppDelegate.swift */; };
-		F6FD7FB4270DC76400B4A2D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD7FB3270DC76400B4A2D3 /* SceneDelegate.swift */; };
-		F6FD7FB6270DC76400B4A2D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD7FB5270DC76400B4A2D3 /* ViewController.swift */; };
-		F6FD7FB9270DC76400B4A2D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6FD7FB7270DC76400B4A2D3 /* Main.storyboard */; };
-		F6FD7FBB270DC76500B4A2D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6FD7FBA270DC76500B4A2D3 /* Assets.xcassets */; };
-		F6FD7FBE270DC76500B4A2D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6FD7FBC270DC76500B4A2D3 /* LaunchScreen.storyboard */; };
-		F6FD7FC6270DCC2200B4A2D3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD7FC5270DCC2200B4A2D3 /* FirstViewController.swift */; };
-		F6FD7FC8270DCC3B00B4A2D3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD7FC7270DCC3B00B4A2D3 /* SecondViewController.swift */; };
-		F6FD7FCA270DCD9800B4A2D3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD7FC9270DCD9800B4A2D3 /* ResultViewController.swift */; };
+		F6A431152719C5CB00895A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431142719C5CB00895A68 /* AppDelegate.swift */; };
+		F6A431172719C5CB00895A68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431162719C5CB00895A68 /* SceneDelegate.swift */; };
+		F6A431192719C5CB00895A68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431182719C5CB00895A68 /* ViewController.swift */; };
+		F6A4311C2719C5CB00895A68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A4311A2719C5CB00895A68 /* Main.storyboard */; };
+		F6A4311E2719C5CD00895A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A4311D2719C5CD00895A68 /* Assets.xcassets */; };
+		F6A431212719C5CD00895A68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A4311F2719C5CD00895A68 /* LaunchScreen.storyboard */; };
+		F6A4312B2719CAAD00895A68 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4312A2719CAAD00895A68 /* SignInViewController.swift */; };
+		F6A4312D2719CABE00895A68 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4312C2719CABE00895A68 /* SignUpViewController.swift */; };
+		F6A4312F2719CAC400895A68 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4312E2719CAC400895A68 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F6FD7FAE270DC76300B4A2D3 /* seminar-homework-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "seminar-homework-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6FD7FB1270DC76300B4A2D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F6FD7FB3270DC76400B4A2D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F6FD7FB5270DC76400B4A2D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F6FD7FB8270DC76400B4A2D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F6FD7FBA270DC76500B4A2D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F6FD7FBD270DC76500B4A2D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F6FD7FBF270DC76500B4A2D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6FD7FC5270DCC2200B4A2D3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F6FD7FC7270DCC3B00B4A2D3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		F6FD7FC9270DCD9800B4A2D3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		F6A431112719C5CB00895A68 /* seminar-homework-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "seminar-homework-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A431142719C5CB00895A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6A431162719C5CB00895A68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F6A431182719C5CB00895A68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6A4311B2719C5CB00895A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6A4311D2719C5CD00895A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6A431202719C5CD00895A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6A431222719C5CD00895A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A4312A2719CAAD00895A68 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F6A4312C2719CABE00895A68 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F6A4312E2719CAC400895A68 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F6FD7FAB270DC76300B4A2D3 /* Frameworks */ = {
+		F6A4310E2719C5CB00895A68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,35 +43,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F6FD7FA5270DC76300B4A2D3 = {
+		F6A431082719C5CB00895A68 = {
 			isa = PBXGroup;
 			children = (
-				F6FD7FB0270DC76300B4A2D3 /* seminar-homework-1 */,
-				F6FD7FAF270DC76300B4A2D3 /* Products */,
+				F6A431132719C5CB00895A68 /* seminar-homework-1 */,
+				F6A431122719C5CB00895A68 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F6FD7FAF270DC76300B4A2D3 /* Products */ = {
+		F6A431122719C5CB00895A68 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6FD7FAE270DC76300B4A2D3 /* seminar-homework-1.app */,
+				F6A431112719C5CB00895A68 /* seminar-homework-1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F6FD7FB0270DC76300B4A2D3 /* seminar-homework-1 */ = {
+		F6A431132719C5CB00895A68 /* seminar-homework-1 */ = {
 			isa = PBXGroup;
 			children = (
-				F6FD7FB1270DC76300B4A2D3 /* AppDelegate.swift */,
-				F6FD7FB3270DC76400B4A2D3 /* SceneDelegate.swift */,
-				F6FD7FB5270DC76400B4A2D3 /* ViewController.swift */,
-				F6FD7FB7270DC76400B4A2D3 /* Main.storyboard */,
-				F6FD7FC9270DCD9800B4A2D3 /* ResultViewController.swift */,
-				F6FD7FC7270DCC3B00B4A2D3 /* SecondViewController.swift */,
-				F6FD7FC5270DCC2200B4A2D3 /* FirstViewController.swift */,
-				F6FD7FBA270DC76500B4A2D3 /* Assets.xcassets */,
-				F6FD7FBC270DC76500B4A2D3 /* LaunchScreen.storyboard */,
-				F6FD7FBF270DC76500B4A2D3 /* Info.plist */,
+				F6A431142719C5CB00895A68 /* AppDelegate.swift */,
+				F6A431162719C5CB00895A68 /* SceneDelegate.swift */,
+				F6A431182719C5CB00895A68 /* ViewController.swift */,
+				F6A4311A2719C5CB00895A68 /* Main.storyboard */,
+				F6A4312A2719CAAD00895A68 /* SignInViewController.swift */,
+				F6A4312C2719CABE00895A68 /* SignUpViewController.swift */,
+				F6A4312E2719CAC400895A68 /* ResultViewController.swift */,
+				F6A4311D2719C5CD00895A68 /* Assets.xcassets */,
+				F6A4311F2719C5CD00895A68 /* LaunchScreen.storyboard */,
+				F6A431222719C5CD00895A68 /* Info.plist */,
 			);
 			path = "seminar-homework-1";
 			sourceTree = "<group>";
@@ -79,13 +79,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F6FD7FAD270DC76300B4A2D3 /* seminar-homework-1 */ = {
+		F6A431102719C5CB00895A68 /* seminar-homework-1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6FD7FC2270DC76500B4A2D3 /* Build configuration list for PBXNativeTarget "seminar-homework-1" */;
+			buildConfigurationList = F6A431252719C5CD00895A68 /* Build configuration list for PBXNativeTarget "seminar-homework-1" */;
 			buildPhases = (
-				F6FD7FAA270DC76300B4A2D3 /* Sources */,
-				F6FD7FAB270DC76300B4A2D3 /* Frameworks */,
-				F6FD7FAC270DC76300B4A2D3 /* Resources */,
+				F6A4310D2719C5CB00895A68 /* Sources */,
+				F6A4310E2719C5CB00895A68 /* Frameworks */,
+				F6A4310F2719C5CB00895A68 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -93,25 +93,25 @@
 			);
 			name = "seminar-homework-1";
 			productName = "seminar-homework-1";
-			productReference = F6FD7FAE270DC76300B4A2D3 /* seminar-homework-1.app */;
+			productReference = F6A431112719C5CB00895A68 /* seminar-homework-1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F6FD7FA6270DC76300B4A2D3 /* Project object */ = {
+		F6A431092719C5CB00895A68 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					F6FD7FAD270DC76300B4A2D3 = {
+					F6A431102719C5CB00895A68 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = F6FD7FA9270DC76300B4A2D3 /* Build configuration list for PBXProject "seminar-homework-1" */;
+			buildConfigurationList = F6A4310C2719C5CB00895A68 /* Build configuration list for PBXProject "seminar-homework-1" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,58 +119,58 @@
 				en,
 				Base,
 			);
-			mainGroup = F6FD7FA5270DC76300B4A2D3;
-			productRefGroup = F6FD7FAF270DC76300B4A2D3 /* Products */;
+			mainGroup = F6A431082719C5CB00895A68;
+			productRefGroup = F6A431122719C5CB00895A68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F6FD7FAD270DC76300B4A2D3 /* seminar-homework-1 */,
+				F6A431102719C5CB00895A68 /* seminar-homework-1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F6FD7FAC270DC76300B4A2D3 /* Resources */ = {
+		F6A4310F2719C5CB00895A68 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6FD7FBE270DC76500B4A2D3 /* LaunchScreen.storyboard in Resources */,
-				F6FD7FBB270DC76500B4A2D3 /* Assets.xcassets in Resources */,
-				F6FD7FB9270DC76400B4A2D3 /* Main.storyboard in Resources */,
+				F6A431212719C5CD00895A68 /* LaunchScreen.storyboard in Resources */,
+				F6A4311E2719C5CD00895A68 /* Assets.xcassets in Resources */,
+				F6A4311C2719C5CB00895A68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F6FD7FAA270DC76300B4A2D3 /* Sources */ = {
+		F6A4310D2719C5CB00895A68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6FD7FB6270DC76400B4A2D3 /* ViewController.swift in Sources */,
-				F6FD7FB2270DC76300B4A2D3 /* AppDelegate.swift in Sources */,
-				F6FD7FB4270DC76400B4A2D3 /* SceneDelegate.swift in Sources */,
-				F6FD7FC8270DCC3B00B4A2D3 /* SecondViewController.swift in Sources */,
-				F6FD7FC6270DCC2200B4A2D3 /* FirstViewController.swift in Sources */,
-				F6FD7FCA270DCD9800B4A2D3 /* ResultViewController.swift in Sources */,
+				F6A431192719C5CB00895A68 /* ViewController.swift in Sources */,
+				F6A431152719C5CB00895A68 /* AppDelegate.swift in Sources */,
+				F6A431172719C5CB00895A68 /* SceneDelegate.swift in Sources */,
+				F6A4312D2719CABE00895A68 /* SignUpViewController.swift in Sources */,
+				F6A4312B2719CAAD00895A68 /* SignInViewController.swift in Sources */,
+				F6A4312F2719CAC400895A68 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F6FD7FB7270DC76400B4A2D3 /* Main.storyboard */ = {
+		F6A4311A2719C5CB00895A68 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F6FD7FB8270DC76400B4A2D3 /* Base */,
+				F6A4311B2719C5CB00895A68 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F6FD7FBC270DC76500B4A2D3 /* LaunchScreen.storyboard */ = {
+		F6A4311F2719C5CD00895A68 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F6FD7FBD270DC76500B4A2D3 /* Base */,
+				F6A431202719C5CD00895A68 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F6FD7FC0270DC76500B4A2D3 /* Debug */ = {
+		F6A431232719C5CD00895A68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,7 +239,7 @@
 			};
 			name = Debug;
 		};
-		F6FD7FC1270DC76500B4A2D3 /* Release */ = {
+		F6A431242719C5CD00895A68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -294,13 +294,14 @@
 			};
 			name = Release;
 		};
-		F6FD7FC3270DC76500B4A2D3 /* Debug */ = {
+		F6A431262719C5CD00895A68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RS46GZF8TU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "seminar-homework-1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -321,13 +322,14 @@
 			};
 			name = Debug;
 		};
-		F6FD7FC4270DC76500B4A2D3 /* Release */ = {
+		F6A431272719C5CD00895A68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RS46GZF8TU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "seminar-homework-1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -351,25 +353,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F6FD7FA9270DC76300B4A2D3 /* Build configuration list for PBXProject "seminar-homework-1" */ = {
+		F6A4310C2719C5CB00895A68 /* Build configuration list for PBXProject "seminar-homework-1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6FD7FC0270DC76500B4A2D3 /* Debug */,
-				F6FD7FC1270DC76500B4A2D3 /* Release */,
+				F6A431232719C5CD00895A68 /* Debug */,
+				F6A431242719C5CD00895A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6FD7FC2270DC76500B4A2D3 /* Build configuration list for PBXNativeTarget "seminar-homework-1" */ = {
+		F6A431252719C5CD00895A68 /* Build configuration list for PBXNativeTarget "seminar-homework-1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6FD7FC3270DC76500B4A2D3 /* Debug */,
-				F6FD7FC4270DC76500B4A2D3 /* Release */,
+				F6A431262719C5CD00895A68 /* Debug */,
+				F6A431272719C5CD00895A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F6FD7FA6270DC76300B4A2D3 /* Project object */;
+	rootObject = F6A431092719C5CB00895A68 /* Project object */;
 }

@@ -24,19 +24,20 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         
         nextButton.isEnabled = false    // 처음에는 비활성화
-        self.dataTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
-        self.contactTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
-        self.pwTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
+        textFieldAddTarget()    // 텍스트가 모두 채워지면 활성화
     }
         
     
     // MARK: Methods
     @objc func textFieldCompleted(_ textField: UITextField) {
-        if dataTextField.hasText && contactTextField.hasText && pwTextField.hasText {   // Text가 모두 채워지면
-            nextButton.isEnabled = true // 버튼 활성화
-        } else {
-            nextButton.isEnabled = false
-        }
+        // 텍스트가 모두 채워지면 활성화
+        nextButton.isEnabled = dataTextField.hasText && contactTextField.hasText && pwTextField.hasText
+    }
+    
+    func textFieldAddTarget() {
+        self.dataTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
+        self.contactTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
+        self.pwTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
     }
     
     
@@ -60,7 +61,9 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func touchUpToShowPW(_ sender: UIButton) {
+        
     }
+    
     
     
 }
