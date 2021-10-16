@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  seminar-homework-1
 //
-//  Created by 정은희 on 2021/10/06.
+//  Created by 정은희 on 2021/10/15.
 //
 
 import UIKit

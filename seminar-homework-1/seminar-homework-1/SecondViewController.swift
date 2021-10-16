@@ -24,9 +24,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
 
         nextButton.isEnabled = false    // 처음에는 비활성화
-        self.dataTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
-        self.contactTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
-        self.pwTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
+        textFieldAddTarget()    // 텍스트가 모두 채워지면 활성화
     }
     
     
@@ -37,6 +35,12 @@ class SecondViewController: UIViewController {
         } else {
             nextButton.isEnabled = false
         }
+    }
+    
+    func textFieldAddTarget() {
+        self.dataTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
+        self.contactTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
+        self.pwTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
     }
     
     
