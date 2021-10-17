@@ -38,5 +38,16 @@ class ResultViewController: UIViewController {
             nameLabel.sizeToFit()
         }
     }
-
+    
+    
+    // MARK: IBActions
+//    @IBAction func touchUpToGoSignInView(_ sender: Any) {
+//        guard let pvc = self.presentingViewController else { return }
+//
+//        self.dismiss(animated: true) {
+//          pvc.present(SignInViewController(), animated: true, completion: nil)
+//        }
+//        // dismiss 한 뒤 바로 present
+//    }
+    
 }

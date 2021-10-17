@@ -8,6 +8,10 @@
 import UIKit
 
 class SignInViewController: UIViewController {
+    
+    // MARK: Labels
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
 
     // MARK: Text Fields
     @IBOutlet weak var nameTextField: UITextField!
@@ -23,7 +27,7 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         editChanged()
-
+        lineBreak()
     }
     
     
@@ -38,6 +42,15 @@ class SignInViewController: UIViewController {
         self.nameTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
         self.contactTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
         self.pwTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // 사용자가 처음 화면을 터치할 때 호출
+        self.view.endEditing(true)
+    }
+    
+    func lineBreak() {
+        descriptionLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
     }
     
     // MARK: IBActions

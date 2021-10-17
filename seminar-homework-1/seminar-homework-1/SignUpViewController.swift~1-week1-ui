@@ -40,11 +40,6 @@ class SignUpViewController: UIViewController {
         self.pwTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        // 사용자가 처음 화면을 터치할 때 호출
-        self.view.endEditing(true)
-    }
-    
     
     // MARK: IBActions
     @IBAction func touchUpToSendName(_ sender: Any) {
