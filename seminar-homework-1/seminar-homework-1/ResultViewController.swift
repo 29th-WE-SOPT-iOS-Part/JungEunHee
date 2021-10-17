@@ -21,7 +21,6 @@ class ResultViewController: UIViewController {
     // MARK: Buttons
     
     
-    
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
