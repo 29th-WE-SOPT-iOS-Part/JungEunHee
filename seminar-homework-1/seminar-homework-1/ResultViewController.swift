@@ -21,7 +21,6 @@ class ResultViewController: UIViewController {
     // MARK: Buttons
     
     
-    
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,20 +33,23 @@ class ResultViewController: UIViewController {
     func setMessageInLabel() {
         if let msg = message {
             // 옵셔널 바인딩으로 값을 꺼내 nameLabel에 넣음
-            nameLabel.text = msg + "님"
+            nameLabel.text = msg + "님 환영합니다!"
             nameLabel.sizeToFit()
         }
     }
     
     
     // MARK: IBActions
-//    @IBAction func touchUpToGoSignInView(_ sender: Any) {
-//        guard let pvc = self.presentingViewController else { return }
-//
-//        self.dismiss(animated: true) {
-//          pvc.present(SignInViewController(), animated: true, completion: nil)
-//        }
-//        // dismiss 한 뒤 바로 present
-//    }
+    @IBAction func touchUpToGoSignInView(_ sender: Any) {
+        // 로그인 화면으로 전환하는 부분
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController else {return}
+        
+        nextVC.modalPresentationStyle = .fullScreen
+        self.present(nextVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func touchUpToGoTabbar(_ sender: UIButton) {
+    }
+    
     
 }

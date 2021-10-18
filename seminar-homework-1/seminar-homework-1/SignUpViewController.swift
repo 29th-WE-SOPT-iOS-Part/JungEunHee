@@ -35,9 +35,9 @@ class SignUpViewController: UIViewController {
     
     func editChanged() {
         nextButton.isEnabled = false    // 처음에는 비활성화
-        self.nameTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
-        self.contactTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
-        self.pwTextField.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
+        [nameTextField, contactTextField, pwTextField].forEach {
+            $0?.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
