@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F64947AF271CF811007563A6 /* TabbarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64947AE271CF810007563A6 /* TabbarStoryboard.storyboard */; };
+		F69B31D9271E688F0038EC1F /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */; };
 		F6A431152719C5CB00895A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431142719C5CB00895A68 /* AppDelegate.swift */; };
 		F6A431172719C5CB00895A68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431162719C5CB00895A68 /* SceneDelegate.swift */; };
 		F6A431192719C5CB00895A68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431182719C5CB00895A68 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		F64947AE271CF810007563A6 /* TabbarStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarStoryboard.storyboard; sourceTree = "<group>"; };
+		F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		F6A431112719C5CB00895A68 /* seminar-homework-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "seminar-homework-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A431142719C5CB00895A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6A431162719C5CB00895A68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,25 +78,58 @@
 		F6A431132719C5CB00895A68 /* seminar-homework-1 */ = {
 			isa = PBXGroup;
 			children = (
+				F6BA719E271DC3BD00528C8B /* Resources */,
+				F6BA719F271DC3F800528C8B /* Sources */,
+				F6A4311A2719C5CB00895A68 /* Main.storyboard */,
+				F6A431222719C5CD00895A68 /* Info.plist */,
+			);
+			path = "seminar-homework-1";
+			sourceTree = "<group>";
+		};
+		F6BA719E271DC3BD00528C8B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				F6A431142719C5CB00895A68 /* AppDelegate.swift */,
 				F6A431162719C5CB00895A68 /* SceneDelegate.swift */,
+				F6A4311D2719C5CD00895A68 /* Assets.xcassets */,
+				F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */,
+				F6BA71A1271DC42600528C8B /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F6BA719F271DC3F800528C8B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F6BA71A0271DC40800528C8B /* VCs */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F6BA71A0271DC40800528C8B /* VCs */ = {
+			isa = PBXGroup;
+			children = (
 				F6A431182719C5CB00895A68 /* ViewController.swift */,
-				F6A4311A2719C5CB00895A68 /* Main.storyboard */,
 				F6A4312A2719CAAD00895A68 /* SignInViewController.swift */,
 				F6A4312C2719CABE00895A68 /* SignUpViewController.swift */,
 				F6A4312E2719CAC400895A68 /* ResultViewController.swift */,
+				F6D62BD9271D249B003DEB38 /* TabbarController.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		F6BA71A1271DC42600528C8B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				F64947AE271CF810007563A6 /* TabbarStoryboard.storyboard */,
 				F6D62BCF271D2266003DEB38 /* HomeTab.storyboard */,
-				F6D62BD9271D249B003DEB38 /* TabbarController.swift */,
 				F6D62BD1271D2277003DEB38 /* ShortsTab.storyboard */,
 				F6D62BD3271D2284003DEB38 /* AddTab.storyboard */,
 				F6D62BD5271D2291003DEB38 /* SubscribeTab.storyboard */,
 				F6D62BD7271D2299003DEB38 /* LibTab.storyboard */,
-				F6A4311D2719C5CD00895A68 /* Assets.xcassets */,
 				F6A4311F2719C5CD00895A68 /* LaunchScreen.storyboard */,
-				F6A431222719C5CD00895A68 /* Info.plist */,
 			);
-			path = "seminar-homework-1";
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +198,7 @@
 				F64947AF271CF811007563A6 /* TabbarStoryboard.storyboard in Resources */,
 				F6D62BD4271D2284003DEB38 /* AddTab.storyboard in Resources */,
 				F6D62BD2271D2277003DEB38 /* ShortsTab.storyboard in Resources */,
+				F69B31D9271E688F0038EC1F /* SF-Pro-Display-Regular.otf in Resources */,
 				F6D62BD6271D2291003DEB38 /* SubscribeTab.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
