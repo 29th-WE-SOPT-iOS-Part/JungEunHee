@@ -33,7 +33,7 @@ class ResultViewController: UIViewController {
     func setMessageInLabel() {
         if let msg = message {
             // 옵셔널 바인딩으로 값을 꺼내 nameLabel에 넣음
-            nameLabel.text = msg + "님"
+            nameLabel.text = msg + "님 환영합니다!"
             nameLabel.sizeToFit()
         }
     }
@@ -42,7 +42,7 @@ class ResultViewController: UIViewController {
     // MARK: IBActions
     @IBAction func touchUpToGoSignInView(_ sender: Any) {
         // 로그인 화면으로 전환하는 부분
-        guard let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController else {return}
+        guard let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "NavigationController") as? NavigationController else {return}
         
         loginVC.modalPresentationStyle = .fullScreen
         loginVC.modalTransitionStyle = .crossDissolve   // 전환 애니메이션 설정
@@ -57,6 +57,7 @@ class ResultViewController: UIViewController {
         // guard let -> nextVC가 nil인지 확인
         // 타입 캐스팅 -> TabbarController로 할당
         
+        nextVC.modalPresentationStyle = .fullScreen
         present(nextVC, animated: true, completion: nil)
     }
     

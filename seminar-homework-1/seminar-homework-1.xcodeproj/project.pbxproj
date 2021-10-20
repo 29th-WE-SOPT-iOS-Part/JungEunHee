@@ -24,6 +24,7 @@
 		F6D62BD6271D2291003DEB38 /* SubscribeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D62BD5271D2291003DEB38 /* SubscribeTab.storyboard */; };
 		F6D62BD8271D2299003DEB38 /* LibTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D62BD7271D2299003DEB38 /* LibTab.storyboard */; };
 		F6D62BDA271D249B003DEB38 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D62BD9271D249B003DEB38 /* TabbarController.swift */; };
+		F6E12A1B271F828B00F0FFF3 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E12A1A271F828B00F0FFF3 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		F6D62BD5271D2291003DEB38 /* SubscribeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubscribeTab.storyboard; sourceTree = "<group>"; };
 		F6D62BD7271D2299003DEB38 /* LibTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LibTab.storyboard; sourceTree = "<group>"; };
 		F6D62BD9271D249B003DEB38 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		F6E12A1A271F828B00F0FFF3 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				F6A4312C2719CABE00895A68 /* SignUpViewController.swift */,
 				F6A4312E2719CAC400895A68 /* ResultViewController.swift */,
 				F6D62BD9271D249B003DEB38 /* TabbarController.swift */,
+				F6E12A1A271F828B00F0FFF3 /* NavigationController.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A431192719C5CB00895A68 /* ViewController.swift in Sources */,
+				F6E12A1B271F828B00F0FFF3 /* NavigationController.swift in Sources */,
 				F6A431152719C5CB00895A68 /* AppDelegate.swift in Sources */,
 				F6A431172719C5CB00895A68 /* SceneDelegate.swift in Sources */,
 				F6A4312D2719CABE00895A68 /* SignUpViewController.swift in Sources */,
