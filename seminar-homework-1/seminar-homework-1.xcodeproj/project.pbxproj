@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F64947AF271CF811007563A6 /* TabbarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64947AE271CF810007563A6 /* TabbarStoryboard.storyboard */; };
+		F674AB21272154E90007926E /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F674AB1E272154E90007926E /* SF-Pro-Display-Medium.otf */; };
+		F674AB22272154E90007926E /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F674AB1F272154E90007926E /* SF-Pro-Display-Semibold.otf */; };
+		F674AB23272154E90007926E /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F674AB20272154E90007926E /* SF-Pro-Display-Bold.otf */; };
 		F69B31D9271E688F0038EC1F /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */; };
 		F6A431152719C5CB00895A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431142719C5CB00895A68 /* AppDelegate.swift */; };
 		F6A431172719C5CB00895A68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431162719C5CB00895A68 /* SceneDelegate.swift */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		F64947AE271CF810007563A6 /* TabbarStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarStoryboard.storyboard; sourceTree = "<group>"; };
+		F674AB1E272154E90007926E /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Medium.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		F674AB1F272154E90007926E /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Semibold.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		F674AB20272154E90007926E /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		F6A431112719C5CB00895A68 /* seminar-homework-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "seminar-homework-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A431142719C5CB00895A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +101,9 @@
 				F6A431162719C5CB00895A68 /* SceneDelegate.swift */,
 				F6A4311D2719C5CD00895A68 /* Assets.xcassets */,
 				F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */,
+				F674AB20272154E90007926E /* SF-Pro-Display-Bold.otf */,
+				F674AB1E272154E90007926E /* SF-Pro-Display-Medium.otf */,
+				F674AB1F272154E90007926E /* SF-Pro-Display-Semibold.otf */,
 				F6BA71A1271DC42600528C8B /* Storyboards */,
 			);
 			path = Resources;
@@ -197,10 +206,13 @@
 				F6A4311E2719C5CD00895A68 /* Assets.xcassets in Resources */,
 				F6D62BD8271D2299003DEB38 /* LibTab.storyboard in Resources */,
 				F6D62BD0271D2266003DEB38 /* HomeTab.storyboard in Resources */,
+				F674AB23272154E90007926E /* SF-Pro-Display-Bold.otf in Resources */,
+				F674AB21272154E90007926E /* SF-Pro-Display-Medium.otf in Resources */,
 				F6A4311C2719C5CB00895A68 /* Main.storyboard in Resources */,
 				F64947AF271CF811007563A6 /* TabbarStoryboard.storyboard in Resources */,
 				F6D62BD4271D2284003DEB38 /* AddTab.storyboard in Resources */,
 				F6D62BD2271D2277003DEB38 /* ShortsTab.storyboard in Resources */,
+				F674AB22272154E90007926E /* SF-Pro-Display-Semibold.otf in Resources */,
 				F69B31D9271E688F0038EC1F /* SF-Pro-Display-Regular.otf in Resources */,
 				F6D62BD6271D2291003DEB38 /* SubscribeTab.storyboard in Resources */,
 			);
