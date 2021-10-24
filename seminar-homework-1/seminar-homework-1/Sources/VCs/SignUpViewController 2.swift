@@ -58,10 +58,10 @@ class SignUpViewController: UIViewController {
     
     @IBAction func touchUpToShowPW(_ sender: UIButton) {
         if sender.isSelected {
-            // 처음 상태: sender.isSelected == false
-            // togle() -> bool 값을 반전시키는 함수
+            sender.isSelected.toggle()  // togle() -> bool 값을 반전시키는 함수
             pwTextField.isSecureTextEntry.toggle()
         } else {
+            sender.isSelected.toggle()
             pwTextField.isSecureTextEntry.toggle()
         }
     }
