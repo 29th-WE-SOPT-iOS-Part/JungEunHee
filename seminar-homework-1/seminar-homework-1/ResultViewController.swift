@@ -33,6 +33,7 @@ class ResultViewController: UIViewController {
     func setMessageInLabel() {
         if let msg = message {
             // 옵셔널 바인딩으로 값을 꺼내 nameLabel에 넣음
+<<<<<<< HEAD
             nameLabel.text = msg + "님 환영합니다!"
             nameLabel.sizeToFit()
         }
@@ -60,4 +61,11 @@ class ResultViewController: UIViewController {
     }
     
     
+=======
+            nameLabel.text = msg + "님"
+            nameLabel.sizeToFit()
+        }
+    }
+
+>>>>>>> 70ac2a4edf4b5b86decd5d483d8c0bb776f0a9e6
 }
