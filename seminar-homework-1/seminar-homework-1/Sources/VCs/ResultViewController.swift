@@ -13,6 +13,9 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     var message: String?    // 전달받은 값을 대입하기 위한 프로퍼티
     
+    // MARK: Buttons
+    @IBOutlet weak var otherLoginButton: UIButton!
+    
     
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -34,11 +37,11 @@ class ResultViewController: UIViewController {
     // MARK: IBActions
     @IBAction func touchUpToGoSignInView(_ sender: Any) {
         // 로그인 화면으로 전환하는 부분
-        guard let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController else {return}
+        guard let loginVC = self.presentingViewController as? UINavigationController else {return}
         
-        loginVC.modalPresentationStyle = .fullScreen
-        loginVC.modalTransitionStyle = .crossDissolve   // 전환 애니메이션 설정
-        self.present(loginVC, animated: true, completion: nil)
+        self.dismiss(animated: true) {
+            loginVC.popToRootViewController(animated: true)
+        }
     }
     
     @IBAction func touchUpToGoTabbar(_ sender: UIButton) {
