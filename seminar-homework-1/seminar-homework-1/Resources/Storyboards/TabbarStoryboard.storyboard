@@ -3,9 +3,91 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="ECF-Ph-uft">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="d8d-lY-HYP" customClass="HomeVC" customModule="seminar_homework_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x1Y-mm-alm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mJI-rK-xFp"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="homeIcon" selectedImage="homeIconFill" id="vl5-UU-AsS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USd-eN-L6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2093" y="711"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="gf8-WI-ltP">
+            <objects>
+                <viewController storyboardIdentifier="ShortsVC" id="shU-Z7-Bcn" customClass="ShortsVC" customModule="seminar_homework_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pLR-nc-MDF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4FA-Ch-ihp"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="shortsIcon" selectedImage="Mask Group" id="w0l-hN-veK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hff-Pf-y5z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1283" y="710"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="gVm-Np-sgp">
+            <objects>
+                <viewController storyboardIdentifier="PlusVC" id="TRp-Qd-5qr" customClass="PlusVC" customModule="seminar_homework_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WBa-IZ-HXa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8sb-D2-TbQ"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="plueCircleIcon-1" selectedImage="plueCircleIcon" id="SJK-qM-Ic3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUP-U4-VJJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-488" y="710"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="BvP-sC-SPc">
+            <objects>
+                <viewController storyboardIdentifier="SubscribeVC" id="Jug-Bx-T5m" customClass="SubscribeVC" customModule="seminar_homework_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="02b-fv-lQc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ggQ-wc-RV4"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="subscriptionsIcon" selectedImage="subscriptionsIconFill" id="mdP-IF-cfE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m3c-eI-iBM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="710"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="n4o-yE-FlT">
+            <objects>
+                <viewController storyboardIdentifier="LibraryVC" id="P2n-Vi-btf" customClass="LibraryVC" customModule="seminar_homework_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sH5-Ci-qcm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JV6-Px-i94"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="LibraryIcon" selectedImage="LibraryIconFill" id="Zzf-Uy-oJK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EEr-3D-SZj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="710"/>
+        </scene>
         <!--Tabbar Controller-->
         <scene sceneID="sHT-TO-0PI">
             <objects>
@@ -15,69 +97,47 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.050268308079999997" green="0.050268308079999997" blue="0.050268308079999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.050268308079999997" green="0.050268308079999997" blue="0.050268308079999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
-                        <segue destination="m6u-Y9-uO4" kind="relationship" relationship="viewControllers" id="qeI-eo-DwG"/>
-                        <segue destination="1aH-az-F1d" kind="relationship" relationship="viewControllers" id="qFg-1Q-Pcd"/>
-                        <segue destination="YTm-LD-4qj" kind="relationship" relationship="viewControllers" id="yDl-BD-RH5"/>
-                        <segue destination="G5u-my-1fO" kind="relationship" relationship="viewControllers" id="fzd-Sv-EWE"/>
-                        <segue destination="WQn-ZJ-pyQ" kind="relationship" relationship="viewControllers" id="ND6-UR-ibl"/>
+                        <segue destination="d8d-lY-HYP" kind="relationship" relationship="viewControllers" id="Lfk-cY-eiM"/>
+                        <segue destination="shU-Z7-Bcn" kind="relationship" relationship="viewControllers" id="6fS-yG-2eO"/>
+                        <segue destination="TRp-Qd-5qr" kind="relationship" relationship="viewControllers" id="O1I-ka-uYM"/>
+                        <segue destination="Jug-Bx-T5m" kind="relationship" relationship="viewControllers" id="tsw-xa-Ene"/>
+                        <segue destination="P2n-Vi-btf" kind="relationship" relationship="viewControllers" id="wA2-Id-WmJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="db8-Tp-eVq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-500" y="-167"/>
         </scene>
-        <!--HomeTab-->
-        <scene sceneID="fCH-3N-PvY">
-            <objects>
-                <viewControllerPlaceholder storyboardName="HomeTab" id="WQn-ZJ-pyQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Urg-cJ-YYX"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qjl-BD-Zis" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1245" y="347"/>
-        </scene>
-        <!--ShortsTab-->
-        <scene sceneID="Ncj-Ae-2mi">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ShortsTab" id="m6u-Y9-uO4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yVO-8q-wEq"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GeE-gc-Uq1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-872" y="347"/>
-        </scene>
-        <!--AddTab-->
-        <scene sceneID="LZm-AW-sro">
-            <objects>
-                <viewControllerPlaceholder storyboardName="AddTab" id="1aH-az-F1d" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hcF-5x-2gp"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VtP-Qn-cVk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-509" y="347"/>
-        </scene>
-        <!--SubscribeTab-->
-        <scene sceneID="zO5-bA-zKN">
-            <objects>
-                <viewControllerPlaceholder storyboardName="SubscribeTab" id="YTm-LD-4qj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="MEb-Ii-T4y"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c1l-Lp-SXr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-154" y="347"/>
-        </scene>
-        <!--LibTab-->
-        <scene sceneID="V2v-Pq-lnv">
-            <objects>
-                <viewControllerPlaceholder storyboardName="LibTab" id="G5u-my-1fO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="zmM-CV-g81"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fbc-B5-Qlw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="209" y="347"/>
-        </scene>
     </scenes>
+    <resources>
+        <image name="LibraryIcon" width="32.5" height="32.5"/>
+        <image name="LibraryIconFill" width="32.5" height="32.5"/>
+        <image name="Mask Group" width="22.5" height="28"/>
+        <image name="homeIcon" width="32.5" height="32.5"/>
+        <image name="homeIconFill" width="32.5" height="32.5"/>
+        <image name="plueCircleIcon" width="32.5" height="32.5"/>
+        <image name="plueCircleIcon-1" width="28" height="28.5"/>
+        <image name="shortsIcon" width="32.5" height="32.5"/>
+        <image name="subscriptionsIcon" width="32.5" height="32.5"/>
+        <image name="subscriptionsIconFill" width="32.5" height="32.5"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
