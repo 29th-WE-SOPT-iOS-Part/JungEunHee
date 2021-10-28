@@ -8,11 +8,15 @@
 import UIKit
 
 class HomeVC: UIViewController {
+    
+    // MARK: IBOutlets
+    @IBOutlet weak var videoTableView: UITableView!
 
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+
     
 }

@@ -357,7 +357,7 @@
         <!--Navigation Controller-->
         <scene sceneID="X0g-gY-yAh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pec-Od-zI6" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Pec-Od-zI6" customClass="NavigationController" customModule="seminar_homework_1" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="x3z-xX-Bex">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>

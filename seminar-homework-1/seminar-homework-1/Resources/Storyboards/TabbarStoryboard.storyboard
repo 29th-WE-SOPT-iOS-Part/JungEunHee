@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8TX-ZB-C26">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d8d-lY-HYP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -15,10 +15,25 @@
                     <view key="view" contentMode="scaleToFill" id="x1Y-mm-alm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hXK-cH-Ixc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="mJI-rK-xFp"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="hXK-cH-Ixc" firstAttribute="leading" secondItem="mJI-rK-xFp" secondAttribute="leading" id="3PY-Sj-h1J"/>
+                            <constraint firstItem="hXK-cH-Ixc" firstAttribute="top" secondItem="mJI-rK-xFp" secondAttribute="top" id="3bG-C9-4cl"/>
+                            <constraint firstItem="mJI-rK-xFp" firstAttribute="trailing" secondItem="hXK-cH-Ixc" secondAttribute="trailing" id="j17-0g-LRk"/>
+                            <constraint firstItem="mJI-rK-xFp" firstAttribute="bottom" secondItem="hXK-cH-Ixc" secondAttribute="bottom" id="qts-Mc-izj"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="homeIcon" selectedImage="homeIconFill" id="vl5-UU-AsS"/>
+                    <connections>
+                        <outlet property="videoTableView" destination="hXK-cH-Ixc" id="Hqn-g5-oEs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USd-eN-L6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,6 +139,9 @@
         <image name="shortsIcon" width="32.5" height="32.5"/>
         <image name="subscriptionsIcon" width="32.5" height="32.5"/>
         <image name="subscriptionsIconFill" width="32.5" height="32.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
