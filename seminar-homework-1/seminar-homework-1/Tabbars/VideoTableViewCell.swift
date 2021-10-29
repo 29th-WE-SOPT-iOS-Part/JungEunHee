@@ -2,7 +2,7 @@
 //  VideoTableViewCell.swift
 //  seminar-homework-1
 //
-//  Created by 정은희 on 2021/10/28.
+//  Created by 정은희 on 2021/10/29.
 //
 
 import UIKit
@@ -18,7 +18,6 @@ class VideoTableViewCell: UITableViewCell {
     @IBOutlet weak var detailsButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
     }

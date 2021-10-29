@@ -55,13 +55,12 @@ class HomeVC: UIViewController {
     func initSubscribeContentList() {
         
         subscribeContentList.append(contentsOf: [
-            SubscribeData(channelName: "구독리스트", channelImageName: "ggamju1"),
-            SubscribeData(channelName: "공개합니다", channelImageName: "ggamju2"),
-            SubscribeData(channelName: "자취남", channelImageName: "ggamju3"),
-            SubscribeData(channelName: "인보라", channelImageName: "ggamju4"),
-            SubscribeData(channelName: "티빙", channelImageName: "ggamju5"),
-            SubscribeData(channelName: "비타민신지니", channelImageName: "ggamju6"),
-            SubscribeData(channelName: "짧은대본", channelImageName: "ggamju7")
+            SubscribeData(channelName: "iOSPart", channelImageName: "ggamju1"),
+            SubscribeData(channelName: "AndroidPart", channelImageName: "ggamju2"),
+            SubscribeData(channelName: "SeverPart", channelImageName: "ggamju3"),
+            SubscribeData(channelName: "WebPart", channelImageName: "ggamju4"),
+            SubscribeData(channelName: "DesignPart", channelImageName: "ggamju5"),
+            SubscribeData(channelName: "PlanPart", channelImageName: "ggamju6"),
         ])
     }
 }

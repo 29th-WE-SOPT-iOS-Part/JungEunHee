@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F60F5930272A9361004155D7 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F592E272A9361004155D7 /* VideoTableViewCell.swift */; };
-		F60F5931272A9361004155D7 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60F592F272A9361004155D7 /* VideoTableViewCell.xib */; };
 		F64947AF271CF811007563A6 /* TabbarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64947AE271CF810007563A6 /* TabbarStoryboard.storyboard */; };
 		F66D251D272A658D000267E9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D251C272A658D000267E9 /* HomeVC.swift */; };
 		F66D251F272A6599000267E9 /* ShortsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D251E272A6599000267E9 /* ShortsVC.swift */; };
@@ -18,6 +16,8 @@
 		F674AB21272154E90007926E /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F674AB1E272154E90007926E /* SF-Pro-Display-Medium.otf */; };
 		F674AB22272154E90007926E /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F674AB1F272154E90007926E /* SF-Pro-Display-Semibold.otf */; };
 		F674AB23272154E90007926E /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F674AB20272154E90007926E /* SF-Pro-Display-Bold.otf */; };
+		F6855064272C375900FB6734 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6855062272C375900FB6734 /* VideoTableViewCell.swift */; };
+		F6855065272C375900FB6734 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6855063272C375900FB6734 /* VideoTableViewCell.xib */; };
 		F69B31D9271E688F0038EC1F /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */; };
 		F6A431152719C5CB00895A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431142719C5CB00895A68 /* AppDelegate.swift */; };
 		F6A431172719C5CB00895A68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431162719C5CB00895A68 /* SceneDelegate.swift */; };
@@ -34,8 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F60F592E272A9361004155D7 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
-		F60F592F272A9361004155D7 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		F64947AE271CF810007563A6 /* TabbarStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarStoryboard.storyboard; sourceTree = "<group>"; };
 		F66D251C272A658D000267E9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F66D251E272A6599000267E9 /* ShortsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsVC.swift; sourceTree = "<group>"; };
@@ -45,6 +43,8 @@
 		F674AB1E272154E90007926E /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Medium.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		F674AB1F272154E90007926E /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Semibold.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		F674AB20272154E90007926E /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		F6855062272C375900FB6734 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		F6855063272C375900FB6734 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		F6A431112719C5CB00895A68 /* seminar-homework-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "seminar-homework-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A431142719C5CB00895A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,11 +78,11 @@
 			children = (
 				F6D62BD9271D249B003DEB38 /* TabbarController.swift */,
 				F66D251C272A658D000267E9 /* HomeVC.swift */,
+				F6855062272C375900FB6734 /* VideoTableViewCell.swift */,
 				F66D251E272A6599000267E9 /* ShortsVC.swift */,
 				F66D2520272A65A4000267E9 /* PlusVC.swift */,
 				F66D2522272A65B0000267E9 /* SubscribeVC.swift */,
 				F66D2524272A65BD000267E9 /* LibraryVC.swift */,
-				F60F592E272A9361004155D7 /* VideoTableViewCell.swift */,
 				F6FAAC3E272BE0F500F03F48 /* VideoContentDataModel.swift */,
 				F6FAAC3A272BD60400F03F48 /* SubscribeCollectionViewCell.swift */,
 				F6FAAC3C272BDAD500F03F48 /* SubscribeContentDataModel.swift */,
@@ -156,7 +156,7 @@
 			children = (
 				F6A4311A2719C5CB00895A68 /* Main.storyboard */,
 				F64947AE271CF810007563A6 /* TabbarStoryboard.storyboard */,
-				F60F592F272A9361004155D7 /* VideoTableViewCell.xib */,
+				F6855063272C375900FB6734 /* VideoTableViewCell.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -220,13 +220,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A4311E2719C5CD00895A68 /* Assets.xcassets in Resources */,
+				F6855065272C375900FB6734 /* VideoTableViewCell.xib in Resources */,
 				F674AB23272154E90007926E /* SF-Pro-Display-Bold.otf in Resources */,
 				F674AB21272154E90007926E /* SF-Pro-Display-Medium.otf in Resources */,
 				F6A4311C2719C5CB00895A68 /* Main.storyboard in Resources */,
 				F64947AF271CF811007563A6 /* TabbarStoryboard.storyboard in Resources */,
 				F674AB22272154E90007926E /* SF-Pro-Display-Semibold.otf in Resources */,
 				F69B31D9271E688F0038EC1F /* SF-Pro-Display-Regular.otf in Resources */,
-				F60F5931272A9361004155D7 /* VideoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +238,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6E12A1B271F828B00F0FFF3 /* NavigationController.swift in Sources */,
-				F60F5930272A9361004155D7 /* VideoTableViewCell.swift in Sources */,
 				F66D251D272A658D000267E9 /* HomeVC.swift in Sources */,
 				F6FAAC3F272BE0F500F03F48 /* VideoContentDataModel.swift in Sources */,
 				F6A431152719C5CB00895A68 /* AppDelegate.swift in Sources */,
@@ -251,6 +250,7 @@
 				F66D2525272A65BD000267E9 /* LibraryVC.swift in Sources */,
 				F66D251F272A6599000267E9 /* ShortsVC.swift in Sources */,
 				F6FAAC3B272BD60500F03F48 /* SubscribeCollectionViewCell.swift in Sources */,
+				F6855064272C375900FB6734 /* VideoTableViewCell.swift in Sources */,
 				F6D62BDA271D249B003DEB38 /* TabbarController.swift in Sources */,
 				F66D2523272A65B0000267E9 /* SubscribeVC.swift in Sources */,
 			);
