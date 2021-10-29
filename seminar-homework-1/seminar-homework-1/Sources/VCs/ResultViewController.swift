@@ -41,6 +41,7 @@ class ResultViewController: UIViewController {
         
         self.dismiss(animated: true) {
             loginVC.popToRootViewController(animated: true)
+            // 스택에 쌓인 뷰를 빼줌.
         }
     }
     
@@ -52,8 +53,8 @@ class ResultViewController: UIViewController {
         // guard let -> nextVC가 nil인지 확인
         // 타입 캐스팅 -> TabbarController로 할당
         
+        nextVC.modalPresentationStyle = .fullScreen
         present(nextVC, animated: true, completion: nil)
     }
-    
     
 }

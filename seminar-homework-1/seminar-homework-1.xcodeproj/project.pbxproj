@@ -28,6 +28,9 @@
 		F6A4312F2719CAC400895A68 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4312E2719CAC400895A68 /* ResultViewController.swift */; };
 		F6D62BDA271D249B003DEB38 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D62BD9271D249B003DEB38 /* TabbarController.swift */; };
 		F6E12A1B271F828B00F0FFF3 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E12A1A271F828B00F0FFF3 /* NavigationController.swift */; };
+		F6FAAC3B272BD60500F03F48 /* SubscribeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FAAC3A272BD60400F03F48 /* SubscribeCollectionViewCell.swift */; };
+		F6FAAC3D272BDAD500F03F48 /* SubscribeContentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FAAC3C272BDAD500F03F48 /* SubscribeContentDataModel.swift */; };
+		F6FAAC3F272BE0F500F03F48 /* VideoContentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FAAC3E272BE0F500F03F48 /* VideoContentDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		F6A4312E2719CAC400895A68 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F6D62BD9271D249B003DEB38 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		F6E12A1A271F828B00F0FFF3 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		F6FAAC3A272BD60400F03F48 /* SubscribeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6FAAC3C272BDAD500F03F48 /* SubscribeContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeContentDataModel.swift; sourceTree = "<group>"; };
+		F6FAAC3E272BE0F500F03F48 /* VideoContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContentDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 				F66D2522272A65B0000267E9 /* SubscribeVC.swift */,
 				F66D2524272A65BD000267E9 /* LibraryVC.swift */,
 				F60F592E272A9361004155D7 /* VideoTableViewCell.swift */,
+				F6FAAC3E272BE0F500F03F48 /* VideoContentDataModel.swift */,
+				F6FAAC3A272BD60400F03F48 /* SubscribeCollectionViewCell.swift */,
+				F6FAAC3C272BDAD500F03F48 /* SubscribeContentDataModel.swift */,
 			);
 			path = Tabbars;
 			sourceTree = "<group>";
@@ -231,7 +240,9 @@
 				F6E12A1B271F828B00F0FFF3 /* NavigationController.swift in Sources */,
 				F60F5930272A9361004155D7 /* VideoTableViewCell.swift in Sources */,
 				F66D251D272A658D000267E9 /* HomeVC.swift in Sources */,
+				F6FAAC3F272BE0F500F03F48 /* VideoContentDataModel.swift in Sources */,
 				F6A431152719C5CB00895A68 /* AppDelegate.swift in Sources */,
+				F6FAAC3D272BDAD500F03F48 /* SubscribeContentDataModel.swift in Sources */,
 				F6A431172719C5CB00895A68 /* SceneDelegate.swift in Sources */,
 				F6A4312D2719CABE00895A68 /* SignUpViewController.swift in Sources */,
 				F6A4312B2719CAAD00895A68 /* SignInViewController.swift in Sources */,
@@ -239,6 +250,7 @@
 				F6A4312F2719CAC400895A68 /* ResultViewController.swift in Sources */,
 				F66D2525272A65BD000267E9 /* LibraryVC.swift in Sources */,
 				F66D251F272A6599000267E9 /* ShortsVC.swift in Sources */,
+				F6FAAC3B272BD60500F03F48 /* SubscribeCollectionViewCell.swift in Sources */,
 				F6D62BDA271D249B003DEB38 /* TabbarController.swift in Sources */,
 				F66D2523272A65B0000267E9 /* SubscribeVC.swift in Sources */,
 			);

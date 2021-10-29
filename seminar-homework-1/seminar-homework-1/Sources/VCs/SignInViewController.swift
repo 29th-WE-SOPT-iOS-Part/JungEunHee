@@ -29,6 +29,12 @@ class SignInViewController: UIViewController {
         editChanged()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        // viewWillAppear -> 뷰가 화면에 돌아올 때마다 무언가를 할 수 있게 해주는 생명주기 메서드
+        super.viewWillAppear(animated)
+        setTextFieldEmpty()
+    }
+    
     
     // MARK: Methods
     @objc func textFieldCompleted(_ textField: UITextField) {
@@ -46,6 +52,13 @@ class SignInViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         // 사용자가 처음 화면을 터치할 때 호출
         self.view.endEditing(true)
+    }
+    
+    func setTextFieldEmpty() {
+        // TextField를 초기화 시켜주는 부분
+        [nameTextField, contactTextField, pwTextField].forEach {
+            $0.text = ""
+        }
     }
 
     
