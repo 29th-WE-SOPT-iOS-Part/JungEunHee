@@ -13,16 +13,23 @@ class HomeVC: UIViewController {
     @IBOutlet weak var videoTableView: UITableView!
     @IBOutlet weak var subscribeCollectionView: UICollectionView!
     
-    // tableview cell에 넣을 앱 데이터 리스트 프로퍼티를 빈 배열로 선언
+    // cell에 넣을 데이터 리스트 프로퍼티를 빈 배열로 선언
     var videoContentList: [VideoContentData] = []
+    var subscribeContentList: [SubscribeData] = []
     
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         initVideoContentList()
+        initSubscribeContentList()
+        
         registerXib()
+        
         videoTableView.dataSource = self
         videoTableView.delegate = self
+        subscribeCollectionView.dataSource = self
+        subscribeCollectionView.delegate = self
 
     }
     
@@ -42,6 +49,19 @@ class HomeVC: UIViewController {
             VideoContentData(previewImageName: "wesoptiOSPart", videoTitle: "4차 iOS 세미나 : Cocoapods & Networking, REST API", channelImageName: "wesoptProfile", channelName: "WE SOPT", views: 100, sinceUpload: "3주"),
             VideoContentData(previewImageName: "wesoptiOSPart", videoTitle: "7차 iOS 세미나 : Animation과 제스쳐, 데이터 전달 심화", channelImageName: "wesoptProfile", channelName: "WE SOPT", views: 100, sinceUpload: "3주"),
             VideoContentData(previewImageName: "wesoptiOSPart", videoTitle: "7AppJam", channelImageName: "wesoptProfile", channelName: "WE SOPT", views: 100, sinceUpload: "3주")
+        ])
+    }
+    
+    func initSubscribeContentList() {
+        
+        subscribeContentList.append(contentsOf: [
+            SubscribeData(channelName: "구독리스트", channelImageName: "ggamju1"),
+            SubscribeData(channelName: "공개합니다", channelImageName: "ggamju2"),
+            SubscribeData(channelName: "자취남", channelImageName: "ggamju3"),
+            SubscribeData(channelName: "인보라", channelImageName: "ggamju4"),
+            SubscribeData(channelName: "티빙", channelImageName: "ggamju5"),
+            SubscribeData(channelName: "비타민신지니", channelImageName: "ggamju6"),
+            SubscribeData(channelName: "짧은대본", channelImageName: "ggamju7")
         ])
     }
 }
@@ -73,4 +93,41 @@ extension HomeVC: UITableViewDataSource {
         return cell
     }
     
+}
+
+extension HomeVC: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        // indexPath에 어떤 cell 데이터를 넣을지 결정하는 메소드
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SubscribeCollectionViewCell.identifier, for: indexPath) as? SubscribeCollectionViewCell else {return UICollectionViewCell()}
+        
+        cell.setData(channelName: subscribeContentList[indexPath.row].channelName, channelImage: subscribeContentList[indexPath.row].makeImage())
+        
+        return cell
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return subscribeContentList.count
+    }
+}
+
+extension HomeVC: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 72, height: 104)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
 }

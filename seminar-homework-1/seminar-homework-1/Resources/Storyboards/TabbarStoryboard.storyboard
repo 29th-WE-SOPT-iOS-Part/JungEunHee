@@ -66,8 +66,9 @@
                                     <constraint firstItem="uEZ-TB-lnz" firstAttribute="top" secondItem="uiT-gn-MDh" secondAttribute="top" constant="11" id="oyI-hz-iSM"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q7s-Q4-mfw">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q7s-Q4-mfw">
                                 <rect key="frame" x="0.0" y="94" width="375" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gd6-wz-JEK">
                                     <size key="itemSize" width="128" height="128"/>
@@ -91,7 +92,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qv2-ab-1oO">
                                                     <rect key="frame" x="16" y="79" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -112,21 +113,23 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hXK-cH-Ixc">
-                                <rect key="frame" x="0.0" y="197" width="375" height="523"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gqO-DU-RR1">
+                                <rect key="frame" x="0.0" y="206" width="375" height="523"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mJI-rK-xFp"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hXK-cH-Ixc" firstAttribute="top" secondItem="q7s-Q4-mfw" secondAttribute="top" id="Teh-RT-V4c"/>
+                            <constraint firstItem="gqO-DU-RR1" firstAttribute="leading" secondItem="mJI-rK-xFp" secondAttribute="leading" id="VbB-SZ-9Ev"/>
+                            <constraint firstItem="mJI-rK-xFp" firstAttribute="trailing" secondItem="gqO-DU-RR1" secondAttribute="trailing" id="wwS-1g-BeQ"/>
+                            <constraint firstItem="mJI-rK-xFp" firstAttribute="bottom" secondItem="gqO-DU-RR1" secondAttribute="bottom" id="xbc-ix-TQY"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="homeIcon" selectedImage="homeIconFill" id="vl5-UU-AsS"/>
                     <connections>
                         <outlet property="subscribeCollectionView" destination="q7s-Q4-mfw" id="hU8-Yj-Vbo"/>
-                        <outlet property="videoTableView" destination="hXK-cH-Ixc" id="Hqn-g5-oEs"/>
+                        <outlet property="videoTableView" destination="gqO-DU-RR1" id="XPk-bB-xGL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USd-eN-L6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -159,7 +162,7 @@
                         <viewLayoutGuide key="safeArea" id="8sb-D2-TbQ"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="plueCircleIcon-1" selectedImage="plueCircleIcon" id="SJK-qM-Ic3"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="plueCircleIcon" selectedImage="plueCircleIcon" id="SJK-qM-Ic3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUP-U4-VJJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,7 +234,6 @@
         <image name="homeIconFill" width="32.333332061767578" height="32.333332061767578"/>
         <image name="notificationIcon" width="32.333332061767578" height="32"/>
         <image name="plueCircleIcon" width="32.333332061767578" height="32.333332061767578"/>
-        <image name="plueCircleIcon-1" width="28.333333969116211" height="28.333333969116211"/>
         <image name="premiumLogo" width="96.333335876464844" height="20"/>
         <image name="shortsIcon" width="32.333332061767578" height="32.333332061767578"/>
         <image name="subscriptionsIcon" width="32.333332061767578" height="32.333332061767578"/>

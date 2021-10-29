@@ -11,11 +11,14 @@ class SubscribeCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "SubscribeCollectionViewCell"
     
-    var subscribeContentList: [SubscribeData] = []
-    
     // MARK: IBOutlets
     @IBOutlet weak var subscribeImageView: UIImageView!
     @IBOutlet weak var subscribeLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+    }
     
     // MARK: Methods
     func setData(channelName: String, channelImage: UIImage?) {
@@ -25,3 +28,4 @@ class SubscribeCollectionViewCell: UICollectionViewCell {
     }
     
 }
+
