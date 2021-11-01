@@ -24,25 +24,13 @@ class TabbarController: UITabBarController {
               let libraryVC = self.storyboard?.instantiateViewController(identifier: "LibraryVC")
             else { return }
         
-        homeVC.tabBarItem.title = "홈"
-        homeVC.tabBarItem.image = UIImage(named: "homeIcon")
-        homeVC.tabBarItem.selectedImage = UIImage(named: "homeIconFill")
+
+        homeVC.tabBarItem = UITabBarItem(title: "홈", image: UIImage(named: "homeIcon"), selectedImage: UIImage(named: "homeIconFill"))
+        shortsVC.tabBarItem = UITabBarItem(title: "Shorts", image: UIImage(named: "shortsIcon"), selectedImage: UIImage(named: "shortsIconFill"))
+        plusVC.tabBarItem = UITabBarItem(title: "추가", image: UIImage(named: "plueCircleIcon-1"), selectedImage: UIImage(named: "plueCircleIcon"))
+        subscribeVC.tabBarItem = UITabBarItem(title: "구독", image: UIImage(named: "subscriptionsIcon"), selectedImage: UIImage(named: "subscriptionsIconFill"))
+        libraryVC.tabBarItem = UITabBarItem(title: "보관함", image: UIImage(named: "LibraryIcon"), selectedImage: UIImage(named: "LibraryIconFill"))
         
-        shortsVC.tabBarItem.title = "Shorts"
-        shortsVC.tabBarItem.image = UIImage(named: "shortsIcon")
-        shortsVC.tabBarItem.selectedImage = UIImage(named: "shortsIconFill")
-        
-        plusVC.tabBarItem.title = "추가"
-        plusVC.tabBarItem.image = UIImage(named: "plueCircleIcon-1")
-        plusVC.tabBarItem.selectedImage = UIImage(named: "plueCircleIcon")
-        
-        subscribeVC.tabBarItem.title = "구독"
-        subscribeVC.tabBarItem.image = UIImage(named: "subscriptionsIcon")
-        subscribeVC.tabBarItem.selectedImage = UIImage(named: "subscriptionsIconFill")
-        
-        libraryVC.tabBarItem.title = "보관함"
-        libraryVC.tabBarItem.image = UIImage(named: "LibraryIcon")
-        libraryVC.tabBarItem.selectedImage = UIImage(named: "LibraryIconFill")
         
         setViewControllers([homeVC, shortsVC, plusVC, subscribeVC, libraryVC], animated: true)
         
