@@ -84,14 +84,14 @@
 			children = (
 				F6D62BD9271D249B003DEB38 /* TabbarController.swift */,
 				F66D251C272A658D000267E9 /* HomeVC.swift */,
-				F6855062272C375900FB6734 /* VideoTableViewCell.swift */,
 				F66D251E272A6599000267E9 /* ShortsVC.swift */,
 				F66D2520272A65A4000267E9 /* PlusVC.swift */,
 				F66D2522272A65B0000267E9 /* SubscribeVC.swift */,
 				F66D2524272A65BD000267E9 /* LibraryVC.swift */,
-				F6FAAC3E272BE0F500F03F48 /* VideoContentDataModel.swift */,
 				F6FAAC3A272BD60400F03F48 /* SubscribeCollectionViewCell.swift */,
 				F6FAAC3C272BDAD500F03F48 /* SubscribeContentDataModel.swift */,
+				F6855062272C375900FB6734 /* VideoTableViewCell.swift */,
+				F6FAAC3E272BE0F500F03F48 /* VideoContentDataModel.swift */,
 				F6E44A2F273162BC00A53DA3 /* CategoryCollectionViewCell.swift */,
 				F6E44A332731649800A53DA3 /* CategoryContentDataModel.swift */,
 			);

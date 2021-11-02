@@ -127,6 +127,8 @@ extension HomeVC: UICollectionViewDataSource {
         // indexPath에 어떤 cell 데이터를 넣을지 결정하는 메소드
         
         // switch-case로 구분해 반환
+        
+        // -- 구독 --
         switch collectionView {
         case subscribeCollectionView:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SubscribeCollectionViewCell.identifier, for: indexPath) as? SubscribeCollectionViewCell else {return UICollectionViewCell()}
@@ -134,7 +136,8 @@ extension HomeVC: UICollectionViewDataSource {
             cell.setData(channelName: subscribeContentList[indexPath.row].channelName, channelImage: subscribeContentList[indexPath.row].makeImage())
             
             return cell
-            
+        
+        // -- 카테고리 --
         case categoryCollectionView:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as? CategoryCollectionViewCell else {return UICollectionViewCell()}
             
@@ -166,7 +169,30 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 72, height: 104)
+        
+        switch collectionView {
+        
+        // -- 구독 --
+        case subscribeCollectionView:
+            return CGSize(width: 72, height: 104)
+        
+        // -- 카테고리 --
+        case categoryCollectionView:
+            
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCollectionViewCell", for: indexPath) as? CategoryCollectionViewCell else {
+                return .zero
+            }
+            cell.setData(categoryData: CategoryContentData(categoryName: categoryContentList[indexPath.item].categoryName))     // 데이터 넣음
+            cell.categoryButton.sizeToFit() // 텍스트에 맞게 사이즈 조절
+            
+            guard let categoryButton = cell.categoryButton.titleLabel else {return .zero}
+            let cellWidth = cell.categoryButton.frame.width + 20    // 버튼의 width, 여백(20)
+
+            return CGSize(width: cellWidth, height: 30)
+            
+        default:
+            return CGSize(width: 0, height: 0)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -174,7 +200,15 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        // minimumLineSpacingForSectionAt -> 최소 간격 (= 셀 크기가 다양할 때 최소 이만큼은 떨어져 있다!!)
+        
+        switch collectionView {
+        case categoryCollectionView:
+            return 9
+        default:
+            return 0
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
