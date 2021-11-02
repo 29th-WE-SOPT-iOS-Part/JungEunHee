@@ -12,10 +12,12 @@ class HomeVC: UIViewController {
     // MARK: IBOutlets
     @IBOutlet weak var videoTableView: UITableView!
     @IBOutlet weak var subscribeCollectionView: UICollectionView!
+    @IBOutlet weak var categoryCollectionView: UICollectionView!
     
     // cell에 넣을 데이터 리스트 프로퍼티를 빈 배열로 선언
     var videoContentList: [VideoContentData] = []
     var subscribeContentList: [SubscribeData] = []
+    var categoryContentList: [CategoryContentData] = []
     
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -23,20 +25,33 @@ class HomeVC: UIViewController {
         
         initVideoContentList()
         initSubscribeContentList()
+        initCategoryContentList()
         
         registerXib()
         
+        setTableView()
+        setCollectionView()
+    }
+    
+    func setTableView() {
         videoTableView.dataSource = self
         videoTableView.delegate = self
-        subscribeCollectionView.dataSource = self
-        subscribeCollectionView.delegate = self
-
+    }
+    
+    func setCollectionView() {
+        // forEach() -> 주어진 함수를 배열 요소 각각에 대해 실행
+        [subscribeCollectionView, categoryCollectionView].forEach {
+            $0?.delegate = self
+            $0?.dataSource = self
+        }
     }
     
     // xib 등록
     func registerXib() {
-        let xibName = UINib(nibName: VideoTableViewCell.identifier, bundle: nil)
-        videoTableView.register(xibName, forCellReuseIdentifier: VideoTableViewCell.identifier)
+        
+        videoTableView.register(UINib(nibName: VideoTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: VideoTableViewCell.identifier)
+        subscribeCollectionView.register(UINib(nibName: SubscribeCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: SubscribeCollectionViewCell.identifier)
+        categoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
     }
     
     // 구조체 데이터를 넣는 함수
@@ -61,6 +76,19 @@ class HomeVC: UIViewController {
             SubscribeData(channelName: "WebPart", channelImageName: "ggamju4"),
             SubscribeData(channelName: "DesignPart", channelImageName: "ggamju5"),
             SubscribeData(channelName: "PlanPart", channelImageName: "ggamju6"),
+        ])
+    }
+    
+    func initCategoryContentList() {
+        
+        categoryContentList.append(contentsOf: [
+            CategoryContentData(categoryName: "전체"),
+            CategoryContentData(categoryName: "오늘"),
+            CategoryContentData(categoryName: "이어서 시청하기"),
+            CategoryContentData(categoryName: "시청하지 않음"),
+            CategoryContentData(categoryName: "실시간"),
+            CategoryContentData(categoryName: "게시물")
+            
         ])
     }
 }
@@ -98,21 +126,44 @@ extension HomeVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // indexPath에 어떤 cell 데이터를 넣을지 결정하는 메소드
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SubscribeCollectionViewCell.identifier, for: indexPath) as? SubscribeCollectionViewCell else {return UICollectionViewCell()}
-        
-        cell.setData(channelName: subscribeContentList[indexPath.row].channelName, channelImage: subscribeContentList[indexPath.row].makeImage())
-        
-        return cell
+        // switch-case로 구분해 반환
+        switch collectionView {
+        case subscribeCollectionView:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SubscribeCollectionViewCell.identifier, for: indexPath) as? SubscribeCollectionViewCell else {return UICollectionViewCell()}
+            
+            cell.setData(channelName: subscribeContentList[indexPath.row].channelName, channelImage: subscribeContentList[indexPath.row].makeImage())
+            
+            return cell
+            
+        case categoryCollectionView:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as? CategoryCollectionViewCell else {return UICollectionViewCell()}
+            
+            cell.setData(categoryData: CategoryContentData(categoryName: categoryContentList[indexPath.item].categoryName))
+            
+            return cell
+            
+        default:
+            return UICollectionViewCell()
+        }
     }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return subscribeContentList.count
+        // switch-case로 구분해 반환
+        switch collectionView {
+        case subscribeCollectionView:
+            return subscribeContentList.count
+        case categoryCollectionView:
+            return categoryContentList.count
+        default:
+            return 0
+        }
     }
 }
 
 extension HomeVC: UICollectionViewDelegateFlowLayout {
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 72, height: 104)
