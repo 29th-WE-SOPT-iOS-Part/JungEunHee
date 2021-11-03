@@ -63,7 +63,7 @@ class HomeVC: UIViewController {
             VideoContentData(previewImageName: "wesoptiOSPart", videoTitle: "3차 iOS 세미나 : ScrollView, Delegate Pattern, TableView, CollectionView", channelImageName: "wesoptProfile", channelName: "WE SOPT", views: 100, sinceUpload: "3주"),
             VideoContentData(previewImageName: "wesoptiOSPart", videoTitle: "4차 iOS 세미나 : Cocoapods & Networking, REST API", channelImageName: "wesoptProfile", channelName: "WE SOPT", views: 100, sinceUpload: "3주"),
             VideoContentData(previewImageName: "wesoptiOSPart", videoTitle: "7차 iOS 세미나 : Animation과 제스쳐, 데이터 전달 심화", channelImageName: "wesoptProfile", channelName: "WE SOPT", views: 100, sinceUpload: "3주"),
-            VideoContentData(previewImageName: "wesoptiOSPart", videoTitle: "7AppJam", channelImageName: "wesoptProfile", channelName: "WE SOPT", views: 100, sinceUpload: "3주")
+            VideoContentData(previewImageName: "wesoptiOSPart", videoTitle: "AppJam", channelImageName: "wesoptProfile", channelName: "WE SOPT", views: 100, sinceUpload: "3주")
         ])
     }
     
@@ -133,7 +133,8 @@ extension HomeVC: UICollectionViewDataSource {
         case subscribeCollectionView:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SubscribeCollectionViewCell.identifier, for: indexPath) as? SubscribeCollectionViewCell else {return UICollectionViewCell()}
             
-            cell.setData(channelName: subscribeContentList[indexPath.row].channelName, channelImage: subscribeContentList[indexPath.row].makeImage())
+            cell.setData(channelName: subscribeContentList[indexPath.row].channelName,
+                         channelImageName: subscribeContentList[indexPath.row].channelImageName)
             
             return cell
         
@@ -185,7 +186,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
             cell.setData(categoryData: CategoryContentData(categoryName: categoryContentList[indexPath.item].categoryName))     // 데이터 넣음
             cell.categoryButton.sizeToFit() // 텍스트에 맞게 사이즈 조절
             
-            guard let categoryButton = cell.categoryButton.titleLabel else {return .zero}
+            guard cell.categoryButton.titleLabel != nil else {return .zero}
             let cellWidth = cell.categoryButton.frame.width + 20    // 버튼의 width, 여백(20)
 
             return CGSize(width: cellWidth, height: 30)
