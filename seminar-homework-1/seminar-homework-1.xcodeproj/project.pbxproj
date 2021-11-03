@@ -31,6 +31,7 @@
 		F6E44A31273162BC00A53DA3 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E44A2F273162BC00A53DA3 /* CategoryCollectionViewCell.swift */; };
 		F6E44A32273162BC00A53DA3 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E44A30273162BC00A53DA3 /* CategoryCollectionViewCell.xib */; };
 		F6E44A342731649800A53DA3 /* CategoryContentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E44A332731649800A53DA3 /* CategoryContentDataModel.swift */; };
+		F6E44A3827323B3100A53DA3 /* SubscribeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E44A3627323B3100A53DA3 /* SubscribeCollectionViewCell.xib */; };
 		F6FAAC3B272BD60500F03F48 /* SubscribeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FAAC3A272BD60400F03F48 /* SubscribeCollectionViewCell.swift */; };
 		F6FAAC3D272BDAD500F03F48 /* SubscribeContentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FAAC3C272BDAD500F03F48 /* SubscribeContentDataModel.swift */; };
 		F6FAAC3F272BE0F500F03F48 /* VideoContentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FAAC3E272BE0F500F03F48 /* VideoContentDataModel.swift */; };
@@ -63,6 +64,7 @@
 		F6E44A2F273162BC00A53DA3 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6E44A30273162BC00A53DA3 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		F6E44A332731649800A53DA3 /* CategoryContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryContentDataModel.swift; sourceTree = "<group>"; };
+		F6E44A3627323B3100A53DA3 /* SubscribeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeCollectionViewCell.xib; sourceTree = "<group>"; };
 		F6FAAC3A272BD60400F03F48 /* SubscribeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6FAAC3C272BDAD500F03F48 /* SubscribeContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeContentDataModel.swift; sourceTree = "<group>"; };
 		F6FAAC3E272BE0F500F03F48 /* VideoContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContentDataModel.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				F64947AE271CF810007563A6 /* TabbarStoryboard.storyboard */,
 				F6855063272C375900FB6734 /* VideoTableViewCell.xib */,
 				F6E44A30273162BC00A53DA3 /* CategoryCollectionViewCell.xib */,
+				F6E44A3627323B3100A53DA3 /* SubscribeCollectionViewCell.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				F674AB23272154E90007926E /* SF-Pro-Display-Bold.otf in Resources */,
 				F674AB21272154E90007926E /* SF-Pro-Display-Medium.otf in Resources */,
 				F6A4311C2719C5CB00895A68 /* Main.storyboard in Resources */,
+				F6E44A3827323B3100A53DA3 /* SubscribeCollectionViewCell.xib in Resources */,
 				F64947AF271CF811007563A6 /* TabbarStoryboard.storyboard in Resources */,
 				F6E44A32273162BC00A53DA3 /* CategoryCollectionViewCell.xib in Resources */,
 				F674AB22272154E90007926E /* SF-Pro-Display-Semibold.otf in Resources */,
