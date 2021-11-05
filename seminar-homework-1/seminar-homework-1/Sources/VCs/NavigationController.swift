@@ -13,6 +13,4 @@ class NavigationController: UINavigationController {
         super.viewDidLoad()
 
     }
-    
-
 }
