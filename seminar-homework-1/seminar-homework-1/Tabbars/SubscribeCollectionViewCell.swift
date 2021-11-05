@@ -23,14 +23,11 @@ class SubscribeCollectionViewCell: UICollectionViewCell {
     }
     
     // MARK: Methods
-    func setData(channelName: String, channelImageName: String) {
+    func setData(channelData: SubscribeData) {
         // 외부에서 데이터를 넣어주는 함수
-        if let channelName = text {
-            subscribeLabel.text = channelName
-        }
-        if let channelImageName = image {
-            subscribeImageView.image = UIImage(named: channelImageName)
-        }
+        
+        subscribeImageView.image = channelData.makeImage()
+        subscribeLabel.text = channelData.channelName
     }
     
 }

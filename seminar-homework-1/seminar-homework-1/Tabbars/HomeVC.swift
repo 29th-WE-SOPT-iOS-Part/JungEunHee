@@ -133,8 +133,7 @@ extension HomeVC: UICollectionViewDataSource {
         case subscribeCollectionView:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SubscribeCollectionViewCell.identifier, for: indexPath) as? SubscribeCollectionViewCell else {return UICollectionViewCell()}
             
-            cell.setData(channelName: subscribeContentList[indexPath.row].channelName,
-                         channelImageName: subscribeContentList[indexPath.row].channelImageName)
+            cell.setData(channelData: SubscribeData(channelName: subscribeContentList[indexPath.item].channelName, channelImageName: subscribeContentList[indexPath.item].channelImageName))
             
             return cell
         
@@ -179,29 +178,29 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
         
         // -- 카테고리 --
         case categoryCollectionView:
-            
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCollectionViewCell", for: indexPath) as? CategoryCollectionViewCell else {
-                return .zero
-            }
-            cell.setData(categoryData: CategoryContentData(categoryName: categoryContentList[indexPath.item].categoryName))     // 데이터 넣음
-            cell.categoryButton.sizeToFit() // 텍스트에 맞게 사이즈 조절
-            
-            guard cell.categoryButton.titleLabel != nil else {return .zero}
-            let cellWidth = cell.categoryButton.frame.width + 20    // 버튼의 width, 여백(20)
-
-            return CGSize(width: cellWidth, height: 30)
-            
+            let cellWidth = categoryContentList[indexPath.item].categoryName.size(withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)]).width + 20
+            return CGSize(width: cellWidth, height: 32)
         default:
             return CGSize(width: 0, height: 0)
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets.zero
+        switch collectionView {
+        case categoryCollectionView:
+            return UIEdgeInsets(top: 0, left: 9, bottom: 0, right: 9)
+        default:
+            return .zero
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         // minimumLineSpacingForSectionAt -> 최소 간격 (= 셀 크기가 다양할 때 최소 이만큼은 떨어져 있다!!)
+        
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         
         switch collectionView {
         case categoryCollectionView:
@@ -209,10 +208,5 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
         default:
             return 0
         }
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
     }
 }
