@@ -14,6 +14,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var subscribeCollectionView: UICollectionView!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
+    
     // cell에 넣을 데이터 리스트 프로퍼티를 빈 배열로 선언
     var videoContentList: [VideoContentData] = []
     var subscribeContentList: [SubscribeData] = []
@@ -32,6 +33,15 @@ class HomeVC: UIViewController {
         setTableView()
         setCollectionView()
     }
+    
+    @IBAction func touchUpToGoLogin(_ sender: UIButton) {
+        
+        let MainSB = UIStoryboard.init(name: "Main", bundle: nil)
+        guard let loginVC = MainSB.instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController else {return}
+        
+        self.present(loginVC, animated: true, completion: nil)
+    }
+    
     
     func setTableView() {
         videoTableView.dataSource = self
@@ -92,6 +102,8 @@ class HomeVC: UIViewController {
         ])
     }
 }
+
+
 
 extension HomeVC: UITableViewDelegate {
     
