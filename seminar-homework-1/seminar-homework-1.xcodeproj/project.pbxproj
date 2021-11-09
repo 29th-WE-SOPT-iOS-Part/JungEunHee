@@ -24,6 +24,7 @@
 		F6A20310273AB68000A855E0 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A2030F273AB68000A855E0 /* NetworkResult.swift */; };
 		F6A20312273AB74B00A855E0 /* LoginResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A20311273AB74A00A855E0 /* LoginResponseDataModel.swift */; };
 		F6A20314273AB89700A855E0 /*  UserSignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A20313273AB89700A855E0 /*  UserSignService.swift */; };
+		F6A20316273AD13F00A855E0 /* SignupResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A20315273AD13E00A855E0 /* SignupResponseDataModel.swift */; };
 		F6A431152719C5CB00895A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431142719C5CB00895A68 /* AppDelegate.swift */; };
 		F6A431172719C5CB00895A68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431162719C5CB00895A68 /* SceneDelegate.swift */; };
 		F6A4311C2719C5CB00895A68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A4311A2719C5CB00895A68 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		F6A2030F273AB68000A855E0 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		F6A20311273AB74A00A855E0 /* LoginResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDataModel.swift; sourceTree = "<group>"; };
 		F6A20313273AB89700A855E0 /*  UserSignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " UserSignService.swift"; sourceTree = "<group>"; };
+		F6A20315273AD13E00A855E0 /* SignupResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseDataModel.swift; sourceTree = "<group>"; };
 		F6A431112719C5CB00895A68 /* seminar-homework-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "seminar-homework-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A431142719C5CB00895A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6A431162719C5CB00895A68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				F6A2030F273AB68000A855E0 /* NetworkResult.swift */,
 				F6A20311273AB74A00A855E0 /* LoginResponseDataModel.swift */,
 				F6A20313273AB89700A855E0 /*  UserSignService.swift */,
+				F6A20315273AD13E00A855E0 /* SignupResponseDataModel.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				F6A20310273AB68000A855E0 /* NetworkResult.swift in Sources */,
 				F6A4312F2719CAC400895A68 /* ResultViewController.swift in Sources */,
 				F6E44A342731649800A53DA3 /* CategoryContentDataModel.swift in Sources */,
+				F6A20316273AD13F00A855E0 /* SignupResponseDataModel.swift in Sources */,
 				F66D2525272A65BD000267E9 /* LibraryVC.swift in Sources */,
 				F66D251F272A6599000267E9 /* ShortsVC.swift in Sources */,
 				F6FAAC3B272BD60500F03F48 /* SubscribeCollectionViewCell.swift in Sources */,
