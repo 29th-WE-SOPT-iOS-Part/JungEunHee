@@ -9,17 +9,15 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-    // MARK: Text Fields
+    // MARK: - UI Component Part
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var contactTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
     
-    
-    // MARK: Buttons
-    @IBOutlet weak var nextButton: UIButton!
+        @IBOutlet weak var nextButton: UIButton!
     
     
-    // MARK: Life Cycle
+    // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
         editChanged()
@@ -27,7 +25,7 @@ class SignUpViewController: UIViewController {
     }
     
     
-    // MARK: Methods
+    // MARK: - Custom Method Part
     @objc func textFieldCompleted(_ textField: UITextField) {
         nextButton.isEnabled = nameTextField.hasText && contactTextField.hasText && pwTextField.hasText
         // TextField가 모두 채워지면 버튼 활성화
@@ -46,7 +44,7 @@ class SignUpViewController: UIViewController {
     }
     
     
-    // MARK: IBActions
+    // MARK: - IBAction Part
     @IBAction func touchUpToSendName(_ sender: Any) {
         guard let resultVC = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {return}
         // as? ResultViewController

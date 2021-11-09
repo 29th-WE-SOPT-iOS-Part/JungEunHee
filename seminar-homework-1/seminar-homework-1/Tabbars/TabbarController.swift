@@ -9,13 +9,14 @@ import UIKit
 
 class TabbarController: UITabBarController {
 
-    // MARK: Life Cycle
+    // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setTabbar()
     }
     
+    // MARK: - Custom Method Part
     func setTabbar() {
         guard let homeVC = self.storyboard?.instantiateViewController(identifier: "HomeVC"),
               let shortsVC = self.storyboard?.instantiateViewController(identifier: "ShortsVC"),

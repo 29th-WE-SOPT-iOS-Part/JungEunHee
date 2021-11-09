@@ -9,22 +9,23 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    // MARK: Labels
+    // MARK: - UI Component Part
     @IBOutlet weak var nameLabel: UILabel!
-    var message: String?    // 전달받은 값을 대입하기 위한 프로퍼티
-    
-    // MARK: Buttons
     @IBOutlet weak var otherLoginButton: UIButton!
     
     
-    // MARK: Life Cycle
+    // MARK: - Vars & Lets Part
+    var message: String?    // 전달받은 값을 대입하기 위한 프로퍼티
+    
+    
+    // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
         setMessageInLabel()
     }
     
     
-    // MARK: Methods
+    // MARK: - Custom Method Part
     func setMessageInLabel() {
         if let msg = message {
             // 옵셔널 바인딩으로 값을 꺼내 nameLabel에 넣음
@@ -34,7 +35,7 @@ class ResultViewController: UIViewController {
     }
     
     
-    // MARK: IBActions
+    // MARK: - IBAction Part
     @IBAction func touchUpToGoSignInView(_ sender: Any) {
         // 로그인 화면으로 전환하는 부분
         guard let loginVC = self.presentingViewController as? UINavigationController else {return}

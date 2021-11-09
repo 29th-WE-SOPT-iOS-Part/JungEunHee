@@ -9,6 +9,7 @@ import UIKit
 
 class NavigationController: UINavigationController {
 
+    // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
 

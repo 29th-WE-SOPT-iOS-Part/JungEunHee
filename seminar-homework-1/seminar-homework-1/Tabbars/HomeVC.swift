@@ -9,7 +9,7 @@ import UIKit
 
 class HomeVC: UIViewController {
     
-    // MARK: IBOutlets
+    // MARK: - UI Component Part
     @IBOutlet weak var videoTableView: UITableView!
     @IBOutlet weak var subscribeCollectionView: UICollectionView!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
@@ -20,7 +20,8 @@ class HomeVC: UIViewController {
     var subscribeContentList: [SubscribeData] = []
     var categoryContentList: [CategoryContentData] = []
     
-    // MARK: Life Cycle
+    
+    // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +35,8 @@ class HomeVC: UIViewController {
         setCollectionView()
     }
     
+
+    // MARK: - IBAction Part
     @IBAction func touchUpToGoLogin(_ sender: UIButton) {
         
         let MainSB = UIStoryboard.init(name: "Main", bundle: nil)
@@ -43,6 +46,7 @@ class HomeVC: UIViewController {
     }
     
     
+    // MARK: - Custom Method Part
     func setTableView() {
         videoTableView.dataSource = self
         videoTableView.delegate = self
@@ -104,7 +108,7 @@ class HomeVC: UIViewController {
 }
 
 
-
+// MARK: - Extension Part
 extension HomeVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

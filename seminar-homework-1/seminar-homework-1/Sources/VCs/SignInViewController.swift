@@ -9,24 +9,21 @@ import UIKit
 
 class SignInViewController: UIViewController {
     
-    // MARK: Labels
+    // MARK: - UI Component Part
     @IBOutlet weak var descriptionLabel: UILabel!
     
-
-    // MARK: Text Fields
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var contactTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
     
-
-    // MARK: Buttons
-    @IBOutlet weak var nextButton: UIButton!
+//    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var touchUpToLogin: UIButton!
     
     
-    // MARK: Life Cycle
+    // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
-        editChanged()
+//        editChanged()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,18 +33,18 @@ class SignInViewController: UIViewController {
     }
     
     
-    // MARK: Methods
-    @objc func textFieldCompleted(_ textField: UITextField) {
-        nextButton.isEnabled = nameTextField.hasText && contactTextField.hasText && pwTextField.hasText
-        // TextField가 모두 채워지면 버튼 활성화
-    }
-    
-    func editChanged() {
-        nextButton.isEnabled = false    // 처음에는 비활성화
-        [nameTextField, contactTextField, pwTextField].forEach {
-            $0?.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
-        }
-    }
+    // MARK: - Custom Method Part
+//    @objc func textFieldCompleted(_ textField: UITextField) {
+//        nextButton.isEnabled = nameTextField.hasText && contactTextField.hasText && pwTextField.hasText
+//        // TextField가 모두 채워지면 버튼 활성화
+//    }
+//
+//    func editChanged() {
+//        nextButton.isEnabled = false    // 처음에는 비활성화
+//        [nameTextField, contactTextField, pwTextField].forEach {
+//            $0?.addTarget(self, action: #selector(self.textFieldCompleted(_:)), for: .editingChanged)
+//        }
+//    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         // 사용자가 처음 화면을 터치할 때 호출
@@ -62,7 +59,7 @@ class SignInViewController: UIViewController {
     }
 
     
-    // MARK: IBActions
+    // MARK: - IBAction Part
     @IBAction func touchUpToSendName(_ sender: Any) {
         guard let resultVC = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {return}
         // as? ResultViewController

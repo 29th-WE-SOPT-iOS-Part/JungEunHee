@@ -9,7 +9,7 @@ import UIKit
 
 class LibraryVC: UIViewController {
 
-    // MARK: Life Cycle
+    // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
 

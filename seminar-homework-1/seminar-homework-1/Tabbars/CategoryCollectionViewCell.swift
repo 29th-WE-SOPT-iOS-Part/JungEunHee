@@ -11,14 +11,18 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "CategoryCollectionViewCell"
     
-    // MARK: IBOutlets
+    // MARK: - UI Component Part
     @IBOutlet weak var categoryButton: UIButton!
+
     
+    // MARK: - Life Cycle Part
     override func awakeFromNib() {
         super.awakeFromNib()
         setButtonShape()
     }
     
+    
+    // MARK: - Custom Method Part
     func setButtonShape() {
         categoryButton.layer.cornerRadius = 16
         categoryButton.layer.borderWidth = 1

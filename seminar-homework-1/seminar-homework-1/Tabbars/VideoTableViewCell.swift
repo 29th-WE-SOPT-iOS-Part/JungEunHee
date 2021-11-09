@@ -11,13 +11,15 @@ class VideoTableViewCell: UITableViewCell {
     
     static let identifier = "VideoTableViewCell"
     
-    // MARK: IBOutlets
+    // MARK: - UI Component Part
     @IBOutlet weak var previewImageView: UIImageView!
     @IBOutlet weak var channelImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var detailsButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    
+    // MARK: - Life Cycle Part
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -26,6 +28,8 @@ class VideoTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    
+    // MARK: - Custom Method Part
     func setData(videoData: VideoContentData) {
         // IBOutlets으로 선언했던 변수들에 데이터를 넣어주는 부분
         
