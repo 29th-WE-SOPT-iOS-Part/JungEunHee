@@ -100,6 +100,10 @@ extension HomeVC: UITableViewDelegate {
         return 306
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)   // 셀을 클릭했을 때 회색 표시 안 뜨게 해줌
+    }
+
 }
 
 extension HomeVC: UITableViewDataSource {
