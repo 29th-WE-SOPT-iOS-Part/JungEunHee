@@ -137,9 +137,8 @@
                         <outlet property="contactTextField" destination="2wi-g0-RHT" id="i0N-Bb-dLq"/>
                         <outlet property="descriptionLabel" destination="S66-cu-oLH" id="C0N-3R-nHV"/>
                         <outlet property="nameTextField" destination="cC1-sz-ibl" id="khf-Xq-gWP"/>
-                        <outlet property="nextButton" destination="fIt-ZV-dAe" id="9Mi-le-hrQ"/>
+                        <outlet property="nextButton" destination="fIt-ZV-dAe" id="DEl-Nj-fyY"/>
                         <outlet property="pwTextField" destination="NQq-qt-4k8" id="tHt-n1-O0x"/>
-                        <outlet property="touchUpToLogin" destination="fIt-ZV-dAe" id="Bv1-vn-hSr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

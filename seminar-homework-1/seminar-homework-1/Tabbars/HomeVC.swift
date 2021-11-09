@@ -38,11 +38,13 @@ class HomeVC: UIViewController {
 
     // MARK: - IBAction Part
     @IBAction func touchUpToGoLogin(_ sender: UIButton) {
-        
+            
         let MainSB = UIStoryboard.init(name: "Main", bundle: nil)
         guard let loginVC = MainSB.instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController else {return}
         
         self.present(loginVC, animated: true, completion: nil)
+        // self.navigationController?.pushViewController(loginVC, animated: true) 왜 안됨...?
+
     }
     
     
