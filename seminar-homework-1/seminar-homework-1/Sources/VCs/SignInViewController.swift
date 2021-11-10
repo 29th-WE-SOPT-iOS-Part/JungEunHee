@@ -104,23 +104,27 @@ extension SignInViewController {
     
     // login 함수에서 정제해서 넘겨준 NetworkResult를 사용하는 부분
     func requestLogin() {
-        UserSignService.shared.login(email: contactTextField.text ?? "",
+    UserLoginService.shared.login(email: contactTextField.text ?? "",
                                      password: pwTextField.text ?? "") { responseData in
             switch responseData {
             case .success(let loginResponse):
                 guard let response = loginResponse as? LoginResponseData else {return}
-                if let userData = response.data {
+                if response.data != nil {
                     self.simpleAlert(title: "로그인",
                                      message: "로그인 성공")
                 }
-            case .requestErr(let msg):
-                print("requestERR \(msg)")
+            case .requestErr:
+                print("requestErr")
+                self.simpleAlert(title: "로그인",
+                                 message: "존재하지 않는 회원입니다.")
+                
             case .pathErr:
                 print("pathErr")
                 self.simpleAlert(title: "로그인",
-                                 message: "존재하지 않는 회원입니다.")
+                                 message: "필요한 값이 없습니다.")
             case .serverErr:
                 print("serverErr")
+
             case .networkFail:
                 print("networkFail")
             }
