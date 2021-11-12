@@ -49,14 +49,16 @@ class SignUpViewController: UIViewController {
                                       message: message,
                                       preferredStyle: .alert)
         
+        // 입력받은 이름 전달하는 부분 (userDefault 아님...)
         let okAction = UIAlertAction(title: "확인", style: .default) {_ in
-            if message == "로그인 성공" {
+            if message == "회원 가입 성공" {
                 guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {return}
                 
-                nextVC.message = self.nameTextField.text    // 입력받은 이름 전달
+                nextVC.message = self.nameTextField.text
                 self.present(nextVC, animated: true, completion: nil)
             }
         }
+        
         alert.addAction(okAction)
         present(alert, animated: true)
     }
@@ -91,7 +93,7 @@ extension SignUpViewController {
     
     // login 함수에서 정제해서 넘겨준 NetworkResult를 사용하는 부분
     func requestSignUp() {
-        UserSignService.shared.signUp(name: nameTextField.text ?? "",
+        UserSignupService.shared.signUp(name: nameTextField.text ?? "",
                                      email: contactTextField.text ?? "",
                                      password: pwTextField.text ?? "") { responseData in
             switch responseData {
@@ -100,9 +102,12 @@ extension SignUpViewController {
                 if response.data != nil {
                     self.simpleAlert(title: "회원가입",
                                      message: "회원 가입 성공")
+                    UserDefaults.standard.set(self.nameTextField.text, forKey: "message")
                 }
-            case .requestErr(let msg):
-                print("requestERR \(msg)")
+            case .requestErr:
+                print("requestERR")
+                self.simpleAlert(title: "회원가입",
+                                 message: "이미 사용 중인 이메일입니다.")
             case .pathErr:
                 print("pathErr")
                 self.simpleAlert(title: "회원가입",

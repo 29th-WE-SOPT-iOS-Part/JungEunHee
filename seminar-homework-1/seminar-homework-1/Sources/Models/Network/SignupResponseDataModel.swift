@@ -13,6 +13,7 @@ import Foundation
 // MARK: - SignUpResponseData
 struct SignupResponseData: Codable {
     // Codable -> 데이터를 JSON 데이터 포맷으로 자유롭게 encoding, decoding 할 수 있도록 해주는 프로토콜
+    
     let status: Int
     let success: Bool
     let message: String
@@ -21,6 +22,7 @@ struct SignupResponseData: Codable {
 
 // MARK: - SignUpResultData
 struct SignupResultData: Codable {
-    let id, password: Int
+    let id: Int
+    // let password: Int
     let name, email: String
 }

@@ -43,7 +43,6 @@ class HomeVC: UIViewController {
         guard let loginVC = MainSB.instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController else {return}
         
         self.present(loginVC, animated: true, completion: nil)
-        // self.navigationController?.pushViewController(loginVC, animated: true) 왜 안됨...?
 
     }
     

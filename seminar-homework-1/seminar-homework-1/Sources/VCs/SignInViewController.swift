@@ -50,14 +50,16 @@ class SignInViewController: UIViewController {
                                       message: message,
                                       preferredStyle: .alert)
         
+        // 입력받은 이름 전달하는 부분 (userDefault 아님...)
         let okAction = UIAlertAction(title: "확인", style: .default) {_ in
             if message == "로그인 성공" {
                 guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {return}
                 
-                nextVC.message = self.nameTextField.text    // 입력받은 이름 전달
+//                nextVC.message = self.nameTextField.text
                 self.present(nextVC, animated: true, completion: nil)
             }
         }
+        
         alert.addAction(okAction)
         present(alert, animated: true)
     }
@@ -112,6 +114,7 @@ extension SignInViewController {
                 if response.data != nil {
                     self.simpleAlert(title: "로그인",
                                      message: "로그인 성공")
+                    UserDefaults.standard.set(self.nameTextField.text, forKey: "message")
                 }
             case .requestErr:
                 print("requestErr")

@@ -23,7 +23,7 @@
 		F6A2030E273AB60500A855E0 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A2030D273AB60500A855E0 /* APIConstants.swift */; };
 		F6A20310273AB68000A855E0 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A2030F273AB68000A855E0 /* NetworkResult.swift */; };
 		F6A20312273AB74B00A855E0 /* LoginResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A20311273AB74A00A855E0 /* LoginResponseDataModel.swift */; };
-		F6A20314273AB89700A855E0 /*  UserSignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A20313273AB89700A855E0 /*  UserSignService.swift */; };
+		F6A20314273AB89700A855E0 /* UserLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A20313273AB89700A855E0 /* UserLoginService.swift */; };
 		F6A20316273AD13F00A855E0 /* SignupResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A20315273AD13E00A855E0 /* SignupResponseDataModel.swift */; };
 		F6A431152719C5CB00895A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431142719C5CB00895A68 /* AppDelegate.swift */; };
 		F6A431172719C5CB00895A68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431162719C5CB00895A68 /* SceneDelegate.swift */; };
@@ -32,6 +32,7 @@
 		F6A4312B2719CAAD00895A68 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4312A2719CAAD00895A68 /* SignInViewController.swift */; };
 		F6A4312D2719CABE00895A68 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4312C2719CABE00895A68 /* SignUpViewController.swift */; };
 		F6A4312F2719CAC400895A68 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4312E2719CAC400895A68 /* ResultViewController.swift */; };
+		F6D0EA10273B62CA006F840B /* UserSignupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D0EA0F273B62CA006F840B /* UserSignupService.swift */; };
 		F6D62BDA271D249B003DEB38 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D62BD9271D249B003DEB38 /* TabbarController.swift */; };
 		F6E12A1B271F828B00F0FFF3 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E12A1A271F828B00F0FFF3 /* NavigationController.swift */; };
 		F6E44A31273162BC00A53DA3 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E44A2F273162BC00A53DA3 /* CategoryCollectionViewCell.swift */; };
@@ -61,7 +62,7 @@
 		F6A2030D273AB60500A855E0 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		F6A2030F273AB68000A855E0 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		F6A20311273AB74A00A855E0 /* LoginResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDataModel.swift; sourceTree = "<group>"; };
-		F6A20313273AB89700A855E0 /*  UserSignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " UserSignService.swift"; sourceTree = "<group>"; };
+		F6A20313273AB89700A855E0 /* UserLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginService.swift; sourceTree = "<group>"; };
 		F6A20315273AD13E00A855E0 /* SignupResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseDataModel.swift; sourceTree = "<group>"; };
 		F6A431112719C5CB00895A68 /* seminar-homework-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "seminar-homework-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A431142719C5CB00895A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		F6A4312A2719CAAD00895A68 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F6A4312C2719CABE00895A68 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F6A4312E2719CAC400895A68 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		F6D0EA0F273B62CA006F840B /* UserSignupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignupService.swift; sourceTree = "<group>"; };
 		F6D62BD9271D249B003DEB38 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		F6E12A1A271F828B00F0FFF3 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		F6E44A2F273162BC00A53DA3 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -157,8 +159,9 @@
 				F6A2030D273AB60500A855E0 /* APIConstants.swift */,
 				F6A2030F273AB68000A855E0 /* NetworkResult.swift */,
 				F6A20311273AB74A00A855E0 /* LoginResponseDataModel.swift */,
-				F6A20313273AB89700A855E0 /*  UserSignService.swift */,
+				F6A20313273AB89700A855E0 /* UserLoginService.swift */,
 				F6A20315273AD13E00A855E0 /* SignupResponseDataModel.swift */,
+				F6D0EA0F273B62CA006F840B /* UserSignupService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -364,7 +367,7 @@
 				F6FAAC3F272BE0F500F03F48 /* VideoContentDataModel.swift in Sources */,
 				F6E44A31273162BC00A53DA3 /* CategoryCollectionViewCell.swift in Sources */,
 				F6A431152719C5CB00895A68 /* AppDelegate.swift in Sources */,
-				F6A20314273AB89700A855E0 /*  UserSignService.swift in Sources */,
+				F6A20314273AB89700A855E0 /* UserLoginService.swift in Sources */,
 				F6A2030E273AB60500A855E0 /* APIConstants.swift in Sources */,
 				F6FAAC3D272BDAD500F03F48 /* SubscribeContentDataModel.swift in Sources */,
 				F6A431172719C5CB00895A68 /* SceneDelegate.swift in Sources */,
@@ -374,6 +377,7 @@
 				F6A20310273AB68000A855E0 /* NetworkResult.swift in Sources */,
 				F6A4312F2719CAC400895A68 /* ResultViewController.swift in Sources */,
 				F6E44A342731649800A53DA3 /* CategoryContentDataModel.swift in Sources */,
+				F6D0EA10273B62CA006F840B /* UserSignupService.swift in Sources */,
 				F6A20316273AD13F00A855E0 /* SignupResponseDataModel.swift in Sources */,
 				F66D2525272A65BD000267E9 /* LibraryVC.swift in Sources */,
 				F66D251F272A6599000267E9 /* ShortsVC.swift in Sources */,

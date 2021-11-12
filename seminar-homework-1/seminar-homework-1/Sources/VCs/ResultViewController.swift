@@ -21,15 +21,23 @@ class ResultViewController: UIViewController {
     // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
-        setMessageInLabel()
+//        setMessageInLabel()
+        setNameInLabel()
     }
     
     
     // MARK: - Custom Method Part
-    func setMessageInLabel() {
-        if let msg = message {
-            // 옵셔널 바인딩으로 값을 꺼내 nameLabel에 넣음
-            nameLabel.text = "\(msg)님"
+//    func setMessageInLabel() {
+//        if let msg = message {
+//            // 옵셔널 바인딩으로 값을 꺼내 nameLabel에 넣음
+//            nameLabel.text = "\(msg)님"
+//            nameLabel.sizeToFit()
+//        }
+//    }
+    
+    func setNameInLabel() {
+        if let userName = UserDefaults.standard.string(forKey: "message") {
+            nameLabel.text = "\(userName)님"
             nameLabel.sizeToFit()
         }
     }
