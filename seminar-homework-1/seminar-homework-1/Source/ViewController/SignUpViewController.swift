@@ -44,12 +44,11 @@ class SignUpViewController: UIViewController {
     }
     
     // alert 창을 띄우기 위한 함수
-    func simpleAlert(title: String, message: String) {
+    func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title,
                                       message: message,
                                       preferredStyle: .alert)
         
-        // 입력받은 이름 전달하는 부분 (userDefault 아님...)
         let okAction = UIAlertAction(title: "확인", style: .default) {_ in
             if message == "회원 가입 성공" {
                 guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {return}
@@ -100,18 +99,18 @@ extension SignUpViewController {
             case .success(let signupResponse):
                 guard let response = signupResponse as? SignupResponseData else {return}
                 if response.data != nil {
-                    self.simpleAlert(title: "회원가입",
+                    self.showAlert(title: "회원가입",
                                      message: "회원 가입 성공")
                     UserDefaults.standard.set(self.nameTextField.text, forKey: "message")
                 }
             case .requestErr:
-                print("requestERR")
-                self.simpleAlert(title: "회원가입",
-                                 message: "이미 사용 중인 이메일입니다.")
+                print("requestErr")
+                self.showAlert(title: "회원가입",
+                                 message: "필요한 값이 없습니다.")
             case .pathErr:
                 print("pathErr")
-                self.simpleAlert(title: "회원가입",
-                                 message: "필요한 값이 없습니다.")
+                self.showAlert(title: "회원가입",
+                                 message: "이미 사용 중인 이메일입니다.")
             case .serverErr:
                 print("serverErr")
             case .networkFail:

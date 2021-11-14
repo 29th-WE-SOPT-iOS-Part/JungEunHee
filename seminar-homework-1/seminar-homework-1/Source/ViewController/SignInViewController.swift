@@ -44,25 +44,16 @@ class SignInViewController: UIViewController {
 //        }
 //    }
     
-    // alert 창을 띄우기 위한 함수
-    func simpleAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title,
-                                      message: message,
-                                      preferredStyle: .alert)
-        
-        // 입력받은 이름 전달하는 부분 (userDefault 아님...)
-        let okAction = UIAlertAction(title: "확인", style: .default) {_ in
-            if message == "로그인 성공" {
-                guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {return}
-                
-//                nextVC.message = self.nameTextField.text
-                self.present(nextVC, animated: true, completion: nil)
-            }
+    private func showAlert(_ message: String, completion: ((UIAlertAction) -> Void)?) {
+            let alert = UIAlertController(title: "로그인", message: message, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "확인", style: .default, handler: completion) 
+            alert.addAction(okAction)
+            self.present(alert, animated: true, completion: nil)
         }
         
-        alert.addAction(okAction)
-        present(alert, animated: true)
-    }
+//        alert.addAction(okAction)
+//        present(alert, animated: true)
+//    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         // 사용자가 처음 화면을 터치할 때 호출
@@ -111,22 +102,24 @@ extension SignInViewController {
             switch responseData {
             case .success(let loginResponse):
                 guard let response = loginResponse as? LoginResponseData else {return}
-                if response.data != nil {
-                    self.simpleAlert(title: "로그인",
-                                     message: "로그인 성공")
+                self.showAlert(response.message) { _ in
+                    guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {return}
+                    
                     UserDefaults.standard.set(self.nameTextField.text, forKey: "message")
+                    
+                    self.present(nextVC, animated: true, completion: nil)
                 }
-            case .requestErr:
-                print("requestErr")
-                self.simpleAlert(title: "로그인",
-                                 message: "존재하지 않는 회원입니다.")
+                
+            case .requestErr(let msg):
+                guard let message = msg as? String else {return}
+                self.showAlert(message, completion: nil)
                 
             case .pathErr:
                 print("pathErr")
-                self.simpleAlert(title: "로그인",
-                                 message: "필요한 값이 없습니다.")
-            case .serverErr:
-                print("serverErr")
+                
+            case .serverErr(let msg):
+                guard let message = msg as? String else {return}
+                self.showAlert(message, completion: nil)
 
             case .networkFail:
                 print("networkFail")

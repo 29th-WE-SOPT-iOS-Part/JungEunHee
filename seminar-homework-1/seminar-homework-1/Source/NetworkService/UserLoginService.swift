@@ -54,28 +54,14 @@ struct UserLoginService {
     
     //  judgeLoginStatus -> 응답 실패로 데이터를 받지 못하는 상태를 분기 처리하기 위한 함수
     private func judgeLoginStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
+        guard let decodedData = try? JSONDecoder().decode(SignupResponseData.self, from: data) else {return .pathErr}
+        
         switch statusCode {
-        case 200: return isVaildLoginData(data: data)   // 성공
-        case 400: return .pathErr(data)   // 문법 오류
-        case 500: return .serverErr // 서버 오류
+        case 200: return .success(decodedData)
+        case 400: return .requestErr(decodedData.message)
+        case 500: return .serverErr(decodedData.message)
         default: return .networkFail
         }
-    }
-    
-    // 데이터를 처리(가공)하는 부분
-    
-    // 1. decode success
-    private func isVaildLoginData(data: Data) -> NetworkResult<Any> {
-        let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(LoginResponseData.self, from: data) else {return .pathErr(data)}
-        return .success(decodedData)
-    }
-    
-    // 2. decode pathErr
-    private func isPathErr(data: Data) -> NetworkResult<Any> {
-        let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(LoginResponseData.self, from: data) else {return .pathErr(data)}
-        return .pathErr(decodedData)
     }
     
 }

@@ -15,8 +15,8 @@ enum NetworkResult<T> {
     case success(T) // 서버통신 성공
     
     case requestErr(T)  // 요청 오류
-    case pathErr(T)    // 경로 오류
-    case serverErr  // 서버의 내부적 오류
+    case pathErr    // 경로 오류
+    case serverErr(T)  // 서버의 내부적 오류
     
     case networkFail    // 네트워크 연결 실패
 }
