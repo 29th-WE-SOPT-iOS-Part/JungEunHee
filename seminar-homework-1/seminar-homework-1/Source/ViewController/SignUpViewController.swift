@@ -14,7 +14,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var contactTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
     
-        @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
     
     
     // MARK: - Life Cycle Part
@@ -85,8 +85,8 @@ extension SignUpViewController {
                                      email: contactTextField.text ?? "",
                                      password: pwTextField.text ?? "") { responseData in
             switch responseData {
-            case .success(let loginResponse):
-                guard let response = loginResponse as? LoginResponseData else {return}
+            case .success(let signupResponse):
+                guard let response = signupResponse as? SignupResponseData else {return}
                 self.showAlert(response.message) { _ in
                     guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {return}
                     
