@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630D9C8216DF7BF1FCBE98D1 /* Pods_seminar_homework_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D1020BA7C6682BAE594BDB /* Pods_seminar_homework_1.framework */; };
+		F6121EDC273EB4B9002172C6 /* UserLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6121EDB273EB4B9002172C6 /* UserLoginService.swift */; };
+		F6121EDE273EB4D9002172C6 /* UserSignupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6121EDD273EB4D9002172C6 /* UserSignupService.swift */; };
 		F64947AF271CF811007563A6 /* TabbarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64947AE271CF810007563A6 /* TabbarStoryboard.storyboard */; };
 		F66D251D272A658D000267E9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D251C272A658D000267E9 /* HomeVC.swift */; };
 		F66D251F272A6599000267E9 /* ShortsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D251E272A6599000267E9 /* ShortsVC.swift */; };
@@ -19,6 +22,10 @@
 		F6855064272C375900FB6734 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6855062272C375900FB6734 /* VideoTableViewCell.swift */; };
 		F6855065272C375900FB6734 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6855063272C375900FB6734 /* VideoTableViewCell.xib */; };
 		F69B31D9271E688F0038EC1F /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */; };
+		F6A2030E273AB60500A855E0 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A2030D273AB60500A855E0 /* APIConstants.swift */; };
+		F6A20310273AB68000A855E0 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A2030F273AB68000A855E0 /* NetworkResult.swift */; };
+		F6A20312273AB74B00A855E0 /* LoginResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A20311273AB74A00A855E0 /* LoginResponseDataModel.swift */; };
+		F6A20316273AD13F00A855E0 /* SignupResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A20315273AD13E00A855E0 /* SignupResponseDataModel.swift */; };
 		F6A431152719C5CB00895A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431142719C5CB00895A68 /* AppDelegate.swift */; };
 		F6A431172719C5CB00895A68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A431162719C5CB00895A68 /* SceneDelegate.swift */; };
 		F6A4311C2719C5CB00895A68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A4311A2719C5CB00895A68 /* Main.storyboard */; };
@@ -38,18 +45,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0738763AB62727936858A9A5 /* Pods-seminar-homework-1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-seminar-homework-1.release.xcconfig"; path = "Target Support Files/Pods-seminar-homework-1/Pods-seminar-homework-1.release.xcconfig"; sourceTree = "<group>"; };
+		29D1020BA7C6682BAE594BDB /* Pods_seminar_homework_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_seminar_homework_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6121EDB273EB4B9002172C6 /* UserLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginService.swift; sourceTree = "<group>"; };
+		F6121EDD273EB4D9002172C6 /* UserSignupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignupService.swift; sourceTree = "<group>"; };
 		F64947AE271CF810007563A6 /* TabbarStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarStoryboard.storyboard; sourceTree = "<group>"; };
 		F66D251C272A658D000267E9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F66D251E272A6599000267E9 /* ShortsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsVC.swift; sourceTree = "<group>"; };
 		F66D2520272A65A4000267E9 /* PlusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusVC.swift; sourceTree = "<group>"; };
 		F66D2522272A65B0000267E9 /* SubscribeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeVC.swift; sourceTree = "<group>"; };
 		F66D2524272A65BD000267E9 /* LibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
-		F674AB1E272154E90007926E /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Medium.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
-		F674AB1F272154E90007926E /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Semibold.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
-		F674AB20272154E90007926E /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		F674AB1E272154E90007926E /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Medium.otf"; path = "/Library/Fonts/SF-Pro-Display-Medium.otf"; sourceTree = "<absolute>"; };
+		F674AB1F272154E90007926E /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Semibold.otf"; path = "/Library/Fonts/SF-Pro-Display-Semibold.otf"; sourceTree = "<absolute>"; };
+		F674AB20272154E90007926E /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "/Library/Fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<absolute>"; };
 		F6855062272C375900FB6734 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		F6855063272C375900FB6734 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
-		F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "/Library/Fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<absolute>"; };
+		F6A2030D273AB60500A855E0 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		F6A2030F273AB68000A855E0 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		F6A20311273AB74A00A855E0 /* LoginResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDataModel.swift; sourceTree = "<group>"; };
+		F6A20315273AD13E00A855E0 /* SignupResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseDataModel.swift; sourceTree = "<group>"; };
 		F6A431112719C5CB00895A68 /* seminar-homework-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "seminar-homework-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A431142719C5CB00895A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6A431162719C5CB00895A68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +83,7 @@
 		F6FAAC3A272BD60400F03F48 /* SubscribeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6FAAC3C272BDAD500F03F48 /* SubscribeContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeContentDataModel.swift; sourceTree = "<group>"; };
 		F6FAAC3E272BE0F500F03F48 /* VideoContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContentDataModel.swift; sourceTree = "<group>"; };
+		FF6B7B674030B6F260A90E5A /* Pods-seminar-homework-1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-seminar-homework-1.debug.xcconfig"; path = "Target Support Files/Pods-seminar-homework-1/Pods-seminar-homework-1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,12 +91,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630D9C8216DF7BF1FCBE98D1 /* Pods_seminar_homework_1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C27814D501B5D9A38715829 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29D1020BA7C6682BAE594BDB /* Pods_seminar_homework_1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94CBDFC8D581179E31DB65D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF6B7B674030B6F260A90E5A /* Pods-seminar-homework-1.debug.xcconfig */,
+				0738763AB62727936858A9A5 /* Pods-seminar-homework-1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F6012878272A63CF001CA954 /* Tabbars */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,13 +125,42 @@
 				F66D2522272A65B0000267E9 /* SubscribeVC.swift */,
 				F66D2524272A65BD000267E9 /* LibraryVC.swift */,
 				F6FAAC3A272BD60400F03F48 /* SubscribeCollectionViewCell.swift */,
-				F6FAAC3C272BDAD500F03F48 /* SubscribeContentDataModel.swift */,
 				F6855062272C375900FB6734 /* VideoTableViewCell.swift */,
-				F6FAAC3E272BE0F500F03F48 /* VideoContentDataModel.swift */,
 				F6E44A2F273162BC00A53DA3 /* CategoryCollectionViewCell.swift */,
-				F6E44A332731649800A53DA3 /* CategoryContentDataModel.swift */,
 			);
 			path = Tabbars;
+			sourceTree = "<group>";
+		};
+		F6A2030A273AB1B300A855E0 /* AppModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6FAAC3C272BDAD500F03F48 /* SubscribeContentDataModel.swift */,
+				F6FAAC3E272BE0F500F03F48 /* VideoContentDataModel.swift */,
+				F6E44A332731649800A53DA3 /* CategoryContentDataModel.swift */,
+			);
+			path = AppModel;
+			sourceTree = "<group>";
+		};
+		F6A2030B273AB3BD00A855E0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */,
+				F674AB20272154E90007926E /* SF-Pro-Display-Bold.otf */,
+				F674AB1E272154E90007926E /* SF-Pro-Display-Medium.otf */,
+				F674AB1F272154E90007926E /* SF-Pro-Display-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F6A2030C273AB5FB00A855E0 /* NetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6A2030D273AB60500A855E0 /* APIConstants.swift */,
+				F6A2030F273AB68000A855E0 /* NetworkResult.swift */,
+				F6A20311273AB74A00A855E0 /* LoginResponseDataModel.swift */,
+				F6A20315273AD13E00A855E0 /* SignupResponseDataModel.swift */,
+			);
+			path = NetworkModel;
 			sourceTree = "<group>";
 		};
 		F6A431082719C5CB00895A68 = {
@@ -105,6 +168,8 @@
 			children = (
 				F6A431132719C5CB00895A68 /* seminar-homework-1 */,
 				F6A431122719C5CB00895A68 /* Products */,
+				94CBDFC8D581179E31DB65D9 /* Pods */,
+				8C27814D501B5D9A38715829 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,46 +184,63 @@
 		F6A431132719C5CB00895A68 /* seminar-homework-1 */ = {
 			isa = PBXGroup;
 			children = (
-				F6BA719E271DC3BD00528C8B /* Resources */,
-				F6BA719F271DC3F800528C8B /* Sources */,
-				F6012878272A63CF001CA954 /* Tabbars */,
-				F6A431222719C5CD00895A68 /* Info.plist */,
+				F6BA719E271DC3BD00528C8B /* Resource */,
+				F6BA719F271DC3F800528C8B /* Source */,
 			);
 			path = "seminar-homework-1";
 			sourceTree = "<group>";
 		};
-		F6BA719E271DC3BD00528C8B /* Resources */ = {
+		F6B40D93273EB05C00FAFE24 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
 				F6A431142719C5CB00895A68 /* AppDelegate.swift */,
 				F6A431162719C5CB00895A68 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F6B40D94273EB09700FAFE24 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				F6121EDB273EB4B9002172C6 /* UserLoginService.swift */,
+				F6121EDD273EB4D9002172C6 /* UserSignupService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		F6BA719E271DC3BD00528C8B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F6A431222719C5CD00895A68 /* Info.plist */,
 				F6A4311D2719C5CD00895A68 /* Assets.xcassets */,
-				F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */,
-				F674AB20272154E90007926E /* SF-Pro-Display-Bold.otf */,
-				F674AB1E272154E90007926E /* SF-Pro-Display-Medium.otf */,
-				F674AB1F272154E90007926E /* SF-Pro-Display-Semibold.otf */,
+				F6A2030B273AB3BD00A855E0 /* Fonts */,
 				F6BA71A1271DC42600528C8B /* Storyboards */,
 			);
-			path = Resources;
+			path = Resource;
 			sourceTree = "<group>";
 		};
-		F6BA719F271DC3F800528C8B /* Sources */ = {
+		F6BA719F271DC3F800528C8B /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				F6BA71A0271DC40800528C8B /* VCs */,
+				F6B40D93273EB05C00FAFE24 /* AppDelegate */,
+				F6A2030A273AB1B300A855E0 /* AppModel */,
+				F6A2030C273AB5FB00A855E0 /* NetworkModel */,
+				F6B40D94273EB09700FAFE24 /* NetworkService */,
+				F6BA71A0271DC40800528C8B /* ViewController */,
 			);
-			path = Sources;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		F6BA71A0271DC40800528C8B /* VCs */ = {
+		F6BA71A0271DC40800528C8B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F6012878272A63CF001CA954 /* Tabbars */,
 				F6A4312A2719CAAD00895A68 /* SignInViewController.swift */,
 				F6A4312C2719CABE00895A68 /* SignUpViewController.swift */,
 				F6A4312E2719CAC400895A68 /* ResultViewController.swift */,
 				F6E12A1A271F828B00F0FFF3 /* NavigationController.swift */,
 			);
-			path = VCs;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		F6BA71A1271DC42600528C8B /* Storyboards */ = {
@@ -180,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6A431252719C5CD00895A68 /* Build configuration list for PBXNativeTarget "seminar-homework-1" */;
 			buildPhases = (
+				F5CD6DF0E7509FF477CC9DC4 /* [CP] Check Pods Manifest.lock */,
 				F6A4310D2719C5CB00895A68 /* Sources */,
 				F6A4310E2719C5CB00895A68 /* Frameworks */,
 				F6A4310F2719C5CB00895A68 /* Resources */,
+				2817CDA76E3D6FCB4ABD4512 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,6 +330,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2817CDA76E3D6FCB4ABD4512 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-seminar-homework-1/Pods-seminar-homework-1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-seminar-homework-1/Pods-seminar-homework-1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-seminar-homework-1/Pods-seminar-homework-1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5CD6DF0E7509FF477CC9DC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-seminar-homework-1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6A4310D2719C5CB00895A68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -253,16 +379,22 @@
 			files = (
 				F6E12A1B271F828B00F0FFF3 /* NavigationController.swift in Sources */,
 				F66D251D272A658D000267E9 /* HomeVC.swift in Sources */,
+				F6121EDC273EB4B9002172C6 /* UserLoginService.swift in Sources */,
+				F6A20312273AB74B00A855E0 /* LoginResponseDataModel.swift in Sources */,
 				F6FAAC3F272BE0F500F03F48 /* VideoContentDataModel.swift in Sources */,
 				F6E44A31273162BC00A53DA3 /* CategoryCollectionViewCell.swift in Sources */,
 				F6A431152719C5CB00895A68 /* AppDelegate.swift in Sources */,
+				F6A2030E273AB60500A855E0 /* APIConstants.swift in Sources */,
 				F6FAAC3D272BDAD500F03F48 /* SubscribeContentDataModel.swift in Sources */,
 				F6A431172719C5CB00895A68 /* SceneDelegate.swift in Sources */,
 				F6A4312D2719CABE00895A68 /* SignUpViewController.swift in Sources */,
 				F6A4312B2719CAAD00895A68 /* SignInViewController.swift in Sources */,
 				F66D2521272A65A4000267E9 /* PlusVC.swift in Sources */,
+				F6A20310273AB68000A855E0 /* NetworkResult.swift in Sources */,
 				F6A4312F2719CAC400895A68 /* ResultViewController.swift in Sources */,
 				F6E44A342731649800A53DA3 /* CategoryContentDataModel.swift in Sources */,
+				F6121EDE273EB4D9002172C6 /* UserSignupService.swift in Sources */,
+				F6A20316273AD13F00A855E0 /* SignupResponseDataModel.swift in Sources */,
 				F66D2525272A65BD000267E9 /* LibraryVC.swift in Sources */,
 				F66D251F272A6599000267E9 /* ShortsVC.swift in Sources */,
 				F6FAAC3B272BD60500F03F48 /* SubscribeCollectionViewCell.swift in Sources */,
@@ -404,6 +536,7 @@
 		};
 		F6A431262719C5CD00895A68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF6B7B674030B6F260A90E5A /* Pods-seminar-homework-1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -411,7 +544,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RS46GZF8TU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "seminar-homework-1/Info.plist";
+				INFOPLIST_FILE = "seminar-homework-1/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -432,6 +565,7 @@
 		};
 		F6A431272719C5CD00895A68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0738763AB62727936858A9A5 /* Pods-seminar-homework-1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,7 +573,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RS46GZF8TU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "seminar-homework-1/Info.plist";
+				INFOPLIST_FILE = "seminar-homework-1/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
