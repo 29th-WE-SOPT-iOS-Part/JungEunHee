@@ -102,8 +102,8 @@ extension SignUpViewController {
             case .pathErr:
                 print("pathErr")
                 
-            case .serverErr(let msg):
-                guard let message = msg as? String else {return}
+            case .serverErr:
+                guard let message = msg.self as? String else {return}
                 self.showAlert(message, completion: nil)
 
             case .networkFail:

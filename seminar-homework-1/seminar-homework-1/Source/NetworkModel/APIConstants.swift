@@ -7,8 +7,6 @@
 
 import Foundation
 
-// API 주소를 모아놓는 파일
-
 struct APIConstants {
         
     // MARK: - Base URL

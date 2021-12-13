@@ -6,14 +6,12 @@
 //
 
 import Foundation
+
 import Alamofire
 
-// request를 보내고 받는 부분을 연결하는 파일
-
 struct UserSignupService {
-    static let shared = UserSignupService()   // 싱글톤 객체 선언 -> 앱 어디서든 접근 가능
+    static let shared = UserSignupService()
     
-    // 회원가입 통신을 할 때 사용하는 함수
     func signUp(name: String,
                 email: String,
                 password:String,
@@ -29,19 +27,15 @@ struct UserSignupService {
             "password" : password
         ]
         
-        // 요청서 만드는 부분
         let dataRequest = AF.request(url,
                                      method: .post,
                                      parameters: body,
                                      encoding: JSONEncoding.default,
                                      headers: header)
         
-        // responseData -> 데이터 통신 시작
         dataRequest.responseData { DataResponse in
-            // DataResponse에 데이터 통신의 결과를 담음
             
             switch DataResponse.result {
-                // 성공과 실패의 경우를 모두 고려
 
             case .success:
                 guard let statusCode = DataResponse.response?.statusCode else {return}
@@ -55,17 +49,31 @@ struct UserSignupService {
         }
     }
     
-    //  judgeSignupStatus -> 응답 실패로 데이터를 받지 못하는 상태를 분기 처리하기 위한 함수
     private func judgeSignupStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
-        guard let decodedData = try? JSONDecoder().decode(SignupResponseData.self, from: data) else {return .pathErr}
         
         switch statusCode {
-        case 200: return .success(decodedData)
-        case 400: return .requestErr(decodedData.message)
-        case 500: return .serverErr(decodedData.message)
+        case 200: return isValidData(data: data)
+        case 400: return isUsedPathErrData(data: data)
+        case 500: return .serverErr
         default: return .networkFail
         }
         
+    }
+    
+    private func isValidData(data: Data) -> NetworkResult<Any> {
+        
+        let decoder = JSONDecoder()
+        
+        guard let decodedData = try? decoder.decode(SignupResponseData.self, from: data) else {return .pathErr}
+        return .success(decodedData)
+    }
+    
+    private func isUsedPathErrData(data: Data)  -> NetworkResult<Any> {
+        
+        let decoder = JSONDecoder()
+
+        guard let decodedData = try? decoder.decode(SignupResponseData.self, from: data) else {return .pathErr}
+        return .requestErr(decodedData)
     }
 
 }
