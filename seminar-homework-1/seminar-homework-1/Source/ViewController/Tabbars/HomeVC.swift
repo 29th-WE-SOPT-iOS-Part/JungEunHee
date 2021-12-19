@@ -61,6 +61,10 @@ class HomeVC: UIViewController {
         }
     }
     
+    @objc func tapView(gestureRecognizer: UIGestureRecognizer) {
+        print("썸네일 tap")
+    }
+    
     // xib 등록
     func registerXib() {
         
@@ -137,6 +141,11 @@ extension HomeVC: UITableViewDataSource {
         // as? 타입 변환
         
         cell.setData(videoData: videoContentList[indexPath.row])
+        
+        let tapRecognizer = UITapGestureRecognizer(target: self,
+                                                   action: #selector(tapView(gestureRecognizer:)))
+        
+        videoTableView.addGestureRecognizer(tapRecognizer)
         
         return cell
     }
