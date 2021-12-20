@@ -9,6 +9,8 @@ import UIKit
 
 class HomeVC: UIViewController {
     
+    static let identifier = "HomeVC"
+    
     // MARK: - UI Component Part
     @IBOutlet weak var videoTableView: UITableView!
     @IBOutlet weak var subscribeCollectionView: UICollectionView!
