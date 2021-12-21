@@ -155,12 +155,12 @@ extension HomeVC: UITableViewDataSource {
         
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: HomeTapVC.identifier) as? HomeTapVC else {return}
         nextVC.modalPresentationStyle = .fullScreen
-        present(nextVC, animated: true) {
-            nextVC.videoImageView.image = UIImage(named: "wesoptiOSPart")
-            nextVC.titleLabel.text = "1차 세미나 : iOS 컴포넌트 이해, XCode 기본 사용법, View 화면 전환"
-            nextVC.descriptionLabel.text = "WE SOPT ・조회수 100만회 ・ 3주 전"
-        }
+
+        nextVC.imageProperty = "wesoptiOSPart"
+        nextVC.titleProperty = "1차 세미나 : iOS 컴포넌트 이해, XCode 기본 사용법, View 화면 전환"
+        nextVC.descriptionProperty = "WE SOPT ・조회수 100만회 ・ 3주 전"
         
+        present(nextVC, animated: true)
     }
     
 }
