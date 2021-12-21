@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: UIViewController, UIGestureRecognizerDelegate {
     
     static let identifier = "HomeVC"
     
@@ -62,10 +62,7 @@ class HomeVC: UIViewController {
             $0?.dataSource = self
         }
     }
-    
-    @objc func tapView(gestureRecognizer: UIGestureRecognizer) {
-        print("썸네일 tap")
-    }
+
     
     // xib 등록
     func registerXib() {
@@ -149,7 +146,21 @@ extension HomeVC: UITableViewDataSource {
         
         videoTableView.addGestureRecognizer(tapRecognizer)
         
+        tapRecognizer.delegate = self
+        
         return cell
+    }
+    
+    @objc func tapView(gestureRecognizer: UIGestureRecognizer) {
+        
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: HomeTapVC.identifier) as? HomeTapVC else {return}
+        nextVC.modalPresentationStyle = .fullScreen
+        present(nextVC, animated: true) {
+            nextVC.videoImageView.image = UIImage(named: "wesoptiOSPart")
+            nextVC.titleLabel.text = "1차 세미나 : iOS 컴포넌트 이해, XCode 기본 사용법, View 화면 전환"
+            nextVC.descriptionLabel.text = "WE SOPT ・조회수 100만회 ・ 3주 전"
+        }
+        
     }
     
 }
