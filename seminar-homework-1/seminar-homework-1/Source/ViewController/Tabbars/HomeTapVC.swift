@@ -31,4 +31,7 @@ class HomeTapVC: UIViewController {
         backButton.tintColor = UIColor.white
     }
 
+    @IBAction func touchedBackButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
