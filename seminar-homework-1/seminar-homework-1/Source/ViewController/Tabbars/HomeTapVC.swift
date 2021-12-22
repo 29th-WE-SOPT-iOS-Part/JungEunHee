@@ -16,6 +16,7 @@ class HomeTapVC: UIViewController {
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var backButton: UIButton!
     
+    // MARK: - Vars & Lets Part
     var imageProperty: String?
     var titleProperty: String?
     var descriptionProperty: String?
@@ -24,8 +25,10 @@ class HomeTapVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageTintColorSettings()
-        setDataWith()    }
+        setDataWith()
+    }
     
+    // MARK: - Custom Method Part
     func imageTintColorSettings() {
         let image = UIImage(named: "locationIcon.png")?.withRenderingMode(.alwaysTemplate)
         backButton.setImage(image, for: .normal)
@@ -33,7 +36,6 @@ class HomeTapVC: UIViewController {
     }
     
     func setDataWith() {    // ⭐️ 프로퍼티로 넘어올 값 세팅해주는 부분
-        
         if let imageProperty = imageProperty {
             videoImageView.image = UIImage(named: imageProperty)
         }
@@ -45,6 +47,7 @@ class HomeTapVC: UIViewController {
         }
     }
 
+    // MARK: - IBAction Part
     @IBAction func touchedBackButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
