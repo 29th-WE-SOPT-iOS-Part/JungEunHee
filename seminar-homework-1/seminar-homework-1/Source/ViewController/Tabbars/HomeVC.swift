@@ -12,8 +12,7 @@ class HomeVC: UIViewController {
     // MARK: - UI Component Part
     @IBOutlet weak var videoTableView: UITableView!
     @IBOutlet weak var subscribeCollectionView: UICollectionView!
-    @IBOutlet weak var categoryCollectionView: UICollectionView!
-    
+    @IBOutlet var categoryCollectionView: UICollectionView!
     
     // cell에 넣을 데이터 리스트 프로퍼티를 빈 배열로 선언
     var videoContentList: [VideoContentData] = []
@@ -63,7 +62,6 @@ class HomeVC: UIViewController {
     
     // xib 등록
     func registerXib() {
-        
         videoTableView.register(UINib(nibName: VideoTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: VideoTableViewCell.identifier)
         subscribeCollectionView.register(UINib(nibName: SubscribeCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: SubscribeCollectionViewCell.identifier)
         categoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
@@ -71,7 +69,6 @@ class HomeVC: UIViewController {
     
     // 구조체 데이터를 넣는 함수
     func initVideoContentList() {
-        
         videoContentList.append(contentsOf: [
             VideoContentData(previewImageName: "wesoptiOSPart", videoTitle: "1차 iOS 세미나 : iOS 컴포넌트 이해, Xcode 기본 사용법, View 화면전환", channelImageName: "wesoptProfile", channelName: "WE SOPT", views: 100, sinceUpload: "3주"),
             VideoContentData(previewImageName: "wesoptiOSPart", videoTitle: "2차 iOS 세미나 : AutoLayout, StackView, TabBarController", channelImageName: "wesoptProfile", channelName: "WE SOPT", views: 100, sinceUpload: "3주"),
@@ -83,7 +80,6 @@ class HomeVC: UIViewController {
     }
     
     func initSubscribeContentList() {
-        
         subscribeContentList.append(contentsOf: [
             SubscribeData(channelName: "iOSPart", channelImageName: "ggamju1"),
             SubscribeData(channelName: "AndroidPart", channelImageName: "ggamju2"),
@@ -95,7 +91,6 @@ class HomeVC: UIViewController {
     }
     
     func initCategoryContentList() {
-        
         categoryContentList.append(contentsOf: [
             CategoryContentData(categoryName: "전체"),
             CategoryContentData(categoryName: "오늘"),
