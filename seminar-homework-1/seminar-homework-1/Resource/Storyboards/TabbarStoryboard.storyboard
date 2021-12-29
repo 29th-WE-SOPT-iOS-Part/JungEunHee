@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d8d-lY-HYP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8TX-ZB-C26">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Item-->
         <scene sceneID="ECF-Ph-uft">
@@ -168,6 +173,91 @@
             </objects>
             <point key="canvasLocation" x="-2096.8000000000002" y="709.35960591133005"/>
         </scene>
+        <!--Home TapVC-->
+        <scene sceneID="BEc-NS-ItN">
+            <objects>
+                <viewController storyboardIdentifier="HomeTapVC" id="ExP-zA-1U7" customClass="HomeTapVC" customModule="seminar_homework_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Qq-VO-de9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oXo-Uc-JqG">
+                                <rect key="frame" x="0.0" y="44" width="375" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="7PF-k8-qRq"/>
+                                    <constraint firstAttribute="height" constant="212" id="CtJ-fF-HMf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rn-m3-7WP">
+                                <rect key="frame" x="15" y="307" width="30" height="15.666666666666686"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                                <color key="textColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk6-Zu-qhh">
+                                <rect key="frame" x="15" y="267" width="300" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="E9y-2S-i7o"/>
+                                    <constraint firstAttribute="width" constant="300" id="n0Z-qw-ypr"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="SFProDisplay-Thin"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aao-Za-3e3">
+                                <rect key="frame" x="330" y="271" width="42" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="ehy-y6-yRq"/>
+                                    <constraint firstAttribute="height" constant="32" id="rbq-vq-aCr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="locationIcon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wha-cX-C91">
+                                <rect key="frame" x="0.0" y="44" width="42" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="1E6-uN-HOQ"/>
+                                    <constraint firstAttribute="width" constant="42" id="MdQ-Mn-vVS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="locationIcon"/>
+                                <connections>
+                                    <action selector="touchedBackButton:" destination="ExP-zA-1U7" eventType="touchUpInside" id="B0Z-a0-y82"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T7S-Sn-tKg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oXo-Uc-JqG" firstAttribute="trailing" secondItem="T7S-Sn-tKg" secondAttribute="trailing" id="S2L-dL-a26"/>
+                            <constraint firstItem="Qk6-Zu-qhh" firstAttribute="top" secondItem="oXo-Uc-JqG" secondAttribute="bottom" constant="11" id="XJF-Ha-qiU"/>
+                            <constraint firstItem="9Rn-m3-7WP" firstAttribute="top" secondItem="Qk6-Zu-qhh" secondAttribute="bottom" constant="5" id="Z6Z-PE-swa"/>
+                            <constraint firstItem="oXo-Uc-JqG" firstAttribute="top" secondItem="T7S-Sn-tKg" secondAttribute="top" id="ZV5-4v-bVa"/>
+                            <constraint firstItem="oXo-Uc-JqG" firstAttribute="leading" secondItem="T7S-Sn-tKg" secondAttribute="leading" id="fB2-El-3V7"/>
+                            <constraint firstItem="Wha-cX-C91" firstAttribute="leading" secondItem="T7S-Sn-tKg" secondAttribute="leading" id="icT-fw-OK6"/>
+                            <constraint firstItem="9Rn-m3-7WP" firstAttribute="leading" secondItem="T7S-Sn-tKg" secondAttribute="leading" constant="15" id="jRK-Vz-scg"/>
+                            <constraint firstItem="aao-Za-3e3" firstAttribute="top" secondItem="oXo-Uc-JqG" secondAttribute="bottom" constant="15" id="jTm-Kb-gja"/>
+                            <constraint firstItem="Wha-cX-C91" firstAttribute="top" secondItem="T7S-Sn-tKg" secondAttribute="top" id="wD1-yc-A2e"/>
+                            <constraint firstItem="aao-Za-3e3" firstAttribute="leading" secondItem="Qk6-Zu-qhh" secondAttribute="trailing" constant="15" id="wGj-YE-grF"/>
+                            <constraint firstItem="Qk6-Zu-qhh" firstAttribute="leading" secondItem="T7S-Sn-tKg" secondAttribute="leading" constant="15" id="wXQ-IR-EOb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="Wha-cX-C91" id="ueO-8h-TGP"/>
+                        <outlet property="descriptionLabel" destination="9Rn-m3-7WP" id="U9E-ds-tub"/>
+                        <outlet property="titleLabel" destination="Qk6-Zu-qhh" id="7vX-4e-kFv"/>
+                        <outlet property="videoImageView" destination="oXo-Uc-JqG" id="LnJ-O5-OnU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Yn-ku-Js5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2098.4000000000001" y="1450.4926108374384"/>
+        </scene>
         <!--Item-->
         <scene sceneID="gf8-WI-ltP">
             <objects>
@@ -264,6 +354,7 @@
         <image name="SearchIcon" width="32.333332061767578" height="32"/>
         <image name="homeIcon" width="32.333332061767578" height="32.333332061767578"/>
         <image name="homeIconFill" width="32.333332061767578" height="32.333332061767578"/>
+        <image name="locationIcon" width="18" height="18"/>
         <image name="notificationIcon" width="32.333332061767578" height="32"/>
         <image name="plueCircleIcon" width="32.333332061767578" height="32.333332061767578"/>
         <image name="premiumLogo" width="96.333335876464844" height="20"/>

@@ -19,6 +19,7 @@
 		F674AB21272154E90007926E /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F674AB1E272154E90007926E /* SF-Pro-Display-Medium.otf */; };
 		F674AB22272154E90007926E /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F674AB1F272154E90007926E /* SF-Pro-Display-Semibold.otf */; };
 		F674AB23272154E90007926E /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F674AB20272154E90007926E /* SF-Pro-Display-Bold.otf */; };
+		F67F0E7C27703F55004A0D8C /* HomeTapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67F0E7B27703F55004A0D8C /* HomeTapVC.swift */; };
 		F6855064272C375900FB6734 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6855062272C375900FB6734 /* VideoTableViewCell.swift */; };
 		F6855065272C375900FB6734 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6855063272C375900FB6734 /* VideoTableViewCell.xib */; };
 		F69B31D9271E688F0038EC1F /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */; };
@@ -58,6 +59,7 @@
 		F674AB1E272154E90007926E /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Medium.otf"; path = "/Library/Fonts/SF-Pro-Display-Medium.otf"; sourceTree = "<absolute>"; };
 		F674AB1F272154E90007926E /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Semibold.otf"; path = "/Library/Fonts/SF-Pro-Display-Semibold.otf"; sourceTree = "<absolute>"; };
 		F674AB20272154E90007926E /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "/Library/Fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<absolute>"; };
+		F67F0E7B27703F55004A0D8C /* HomeTapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTapVC.swift; sourceTree = "<group>"; };
 		F6855062272C375900FB6734 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		F6855063272C375900FB6734 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		F69B31D8271E688F0038EC1F /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "/Library/Fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<absolute>"; };
@@ -120,6 +122,7 @@
 			children = (
 				F6D62BD9271D249B003DEB38 /* TabbarController.swift */,
 				F66D251C272A658D000267E9 /* HomeVC.swift */,
+				F67F0E7B27703F55004A0D8C /* HomeTapVC.swift */,
 				F66D251E272A6599000267E9 /* ShortsVC.swift */,
 				F66D2520272A65A4000267E9 /* PlusVC.swift */,
 				F66D2522272A65B0000267E9 /* SubscribeVC.swift */,
@@ -397,6 +400,7 @@
 				F6A20316273AD13F00A855E0 /* SignupResponseDataModel.swift in Sources */,
 				F66D2525272A65BD000267E9 /* LibraryVC.swift in Sources */,
 				F66D251F272A6599000267E9 /* ShortsVC.swift in Sources */,
+				F67F0E7C27703F55004A0D8C /* HomeTapVC.swift in Sources */,
 				F6FAAC3B272BD60500F03F48 /* SubscribeCollectionViewCell.swift in Sources */,
 				F6855064272C375900FB6734 /* VideoTableViewCell.swift in Sources */,
 				F6D62BDA271D249B003DEB38 /* TabbarController.swift in Sources */,
